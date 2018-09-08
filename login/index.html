@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="uft-8">
+      <title>Login</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="shortcut icon" href="sci.ico">
+    <body>
+<div class="login-box">
+  <h1>Login</h1>
+  <form name="login">
+    <div class="textbox">
+    <i class="fa fa-lock" aria-hidden="true"></i>
+      <input type="password" placeholder="password" name="pswrd"><br>
+  </div>
+<input class="btn" type="button" onclick="check(this.form)" value="Login">
+  </div>
+    </form>
+  <script language="javascript">
+            function check(form)
+                { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.pswrd.value == "qweasd") {
+                    window.open('../home/home.html', "_self")/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("incorrect password")/*displays error message*/
+                }
+            }
+            </script>
+    </body>
+  </head>
+</html>
