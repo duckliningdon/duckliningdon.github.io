@@ -14,10 +14,10 @@ body{
   margin: 0 auto;
 }
 .header{
-  width: 100%;
+  width: 105%;
   height: 80px;
   background-color: #000;
-  top: 0;
+  top: 0px;
   position: fixed;
   opacity: .8;
 }
