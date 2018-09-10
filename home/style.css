@@ -43,3 +43,21 @@ padding-top: 13px;
 .nav{
 float: right;
 }
+
+.cent1{
+  position: relative;
+  top: 960px;
+  left: 0px;
+  height: 4500px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.centtext1{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 100px;
+}
