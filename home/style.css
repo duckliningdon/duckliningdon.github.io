@@ -64,9 +64,9 @@ float: right;
 
 .cent1{
   position: relative;
-  top: 960px;
+  top: 1060px;
   left: 0px;
-  height: 1000px;
+  height: 530px;
   width: 100%;
   margin: 0 auto;
   background-color: white;
@@ -245,6 +245,8 @@ font: Open Sans 600, 300
 
 .bloggggg{
   z-index: 500;
+  position: relative;
+  top: 252%
 }
 
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
@@ -263,6 +265,7 @@ font: Open Sans 600, 300
   border-radius: 25px;
   height: 400px;
   transition: all .3s;
+  top: 590px;
 }
 @media screen and (max-width: 992px) {
   .blog-slider {
