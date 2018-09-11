@@ -243,7 +243,7 @@ font: Open Sans 600, 300
 /*!!!!!!!!!!!!!!!*/
 
 .bloggggg{
-  z-index: -9000;
+  z-index: 500;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
