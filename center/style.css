@@ -17,6 +17,7 @@ body{
 }
 
 .weather{
-  width: 150%;
-  height: 150%;
+  top: 80px;
+  position: relative;
+  transform: scale(2);
 }
