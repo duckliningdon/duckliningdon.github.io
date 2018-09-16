@@ -1,6 +1,6 @@
 /* page format */
+/* page format */
 body{
-  margin: 0;
   padding: 0;
   font-family: sans-serif;
   background: url(bg.jpg) no-repeat center center fixed;
@@ -8,14 +8,18 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  z-index: 100
+  z-index: 100;
+  overflow-x: hidden;
+  margin: 0;
 } /* nav bar */
 .container{
   width: 960px;
   margin: 0 auto;
-  z-index: 100
+  z-index: 100;
+  overflow-x: hidden;
 }
 .header{
+  overflow-x: hidden;
   z-index: 10000;
   width: 105%;
   height: 80px;
@@ -40,7 +44,8 @@ body{
 
 .logo{
 float: left;
-font-family: "Helvetica";
+font-family: 'Raleway', sans-serif;
+text-shadow: 0px 0px 3px #fff;
 font-size: 15px;
 }
 
@@ -58,6 +63,8 @@ padding-top: 13px;
 
 .nav{
 float: right;
+font-family: 'Raleway', sans-serif;
+  text-shadow: 0px 0px 3px #fff;
 }
 
 img.center{
@@ -122,6 +129,8 @@ animation-duration:1s;
   top: 100px;
   color: white;
   top: 50%;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 0px 0px 3px #fff;
 }
 
 /* make keyframes that tell the start state and the end state of our object */

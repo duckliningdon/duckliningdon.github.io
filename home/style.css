@@ -1,10 +1,11 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 /* page format */
 html {
   --sunglassoffset: -25px;
+  min-height: 100%;
 }
 
 body{
-  margin: 0;
   padding: 0;
   font-family: sans-serif;
   background: url(bg.jpg) no-repeat center center fixed;
@@ -13,15 +14,17 @@ body{
   -o-background-size: cover;
   background-size: cover;
   z-index: 100;
-
+  overflow-x: hidden;
+  margin: 0;
 } /* nav bar */
 .container{
   width: 960px;
   margin: 0 auto;
-  z-index: 100
-  overflow-y: hidden;
+  z-index: 100;
+  overflow-x: hidden;
 }
 .header{
+  overflow-x: hidden;
   z-index: 10000;
   width: 105%;
   height: 80px;
@@ -46,7 +49,8 @@ body{
 
 .logo{
 float: left;
-font-family: "Helvetica";
+font-family: 'Raleway', sans-serif;
+text-shadow: 0px 0px 3px #fff;
 font-size: 15px;
 }
 
@@ -64,11 +68,40 @@ padding-top: 13px;
 
 .nav{
 float: right;
+font-family: 'Raleway', sans-serif;
+  text-shadow: 0px 0px 3px #fff;
+}
+
+.welcomeslider{
+  position: relative;
+  left: 0px;
+  height: 1001px;
+  width: 100%;
+  margin: 0px auto;
+  background-color: black;
+  z-index: -10000;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+  opacity: 0.5;
+  top: -45px;
+}
+
+.welcometextcontent{
+  position: relative;
+  top: 20%;
+  left: 35%;
+}
+
+.welcometextheader{
+  color: white;
+  font-size: 100px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 0px 0px 3px #fff;
 }
 
 .cent1{
   position: relative;
-  top: 1060px;
+  top: -51px;
   left: 0px;
   height: 530px;
   width: 100%;
@@ -80,7 +113,7 @@ float: right;
 
 .cent2{
   position: relative;
-  top: 1060px;
+  top: 425px;
   left: 0px;
   height: 530px;
   width: 100%;
@@ -100,7 +133,7 @@ float: right;
 
 .footer{
   position: relative;
-  top: 1630px;
+  top: 1060px;
   left: 0px;
   height: 100px;
   width: 100%;
@@ -118,6 +151,8 @@ float: right;
   top: 100px;
   color: white;
   top: 50%;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 0px 0px 3px #fff;
 }
 /* !!!EXTRA STUFF!!!
 /* make keyframes that tell the start state and the end state of our object */
@@ -160,7 +195,7 @@ font: Open Sans 600, 300
   transform: translate(-50%, -50%);
   color: #fff;
   font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   border-radius: 2px;
 }
 
@@ -173,7 +208,7 @@ font: Open Sans 600, 300
   transform: translate(-50%, -50%);
   color: #fff;
   font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   border-radius: 2px;
   z-index: -100;
 }
@@ -244,7 +279,7 @@ font: Open Sans 600, 300
   transform: translate(-50%, -50%);
   color: #fff;
   font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   border-radius: 2px;
 }
 
@@ -279,7 +314,7 @@ font: Open Sans 600, 300
   transform: translate(-50%, -50%);
   color: #fff;
   font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   border-radius: 2px;
   z-index: -100;
 }
@@ -326,7 +361,7 @@ font: Open Sans 600, 300
   transform: translate(-50%, -50%);
   color: #fff;
   font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   border-radius: 2px;
 }
 
@@ -361,7 +396,7 @@ font: Open Sans 600, 300
   transform: translate(-50%, -50%);
   color: #fff;
   font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   border-radius: 2px;
   z-index: -100;
 }
@@ -475,7 +510,7 @@ font: Open Sans 600, 300
   font-size: 27px;
   font-weight: 600;
   margin: 0;
-  line-height: 1.2;
+  line-height: 1.8;
 }
 
 .profile span {
@@ -535,7 +570,7 @@ font: Open Sans 600, 300
 .bloggggg{
   z-index: 500;
   position: relative;
-  top: 252%
+  top: 225%;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
@@ -553,7 +588,7 @@ font: Open Sans 600, 300
   border-radius: 25px;
   height: 400px;
   transition: all .3s;
-  top: 570px;
+  top: -540px;
 }
 @media screen and (max-width: 992px) {
   .blog-slider {
@@ -791,4 +826,51 @@ font: Open Sans 600, 300
     height: 11px;
     width: 30px;
   }
+}
+/*SCROLL icon*/
+.icon-scroll {
+	position: relative;
+	top: 63%;
+	left: 52%;
+	margin-left: -8px;
+	width: 16px;
+	height: 50px;
+	z-index: 99999;
+	-webkit-transition: opacity: .4s;
+}
+.icon-scroll span {
+	display: block;
+	width: 5px;
+	height: 5px;
+	border-right: 1px solid rgba(255,255,255,.8);
+	border-bottom: 1px solid rgba(255,255,255,.8);
+	margin: 0 0 2px 5px;
+
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+    animation: mouse-scroll 1s infinite;
+    -webkit-animation-direction: alternate;
+	animation-direction: alternate;
+}
+
+.icon-scroll .z1 {
+	margin-top: 6px;
+	-webkit-animation-delay: .1s;
+	-moz-animation-delay: .1s;
+	animation-delay: .1s;
+}
+
+.icon-scroll .z2 {
+	-webkit-animation-delay: .2s;
+	-moz-animation-delay: .2s;
+	animation-delay: .2s;
+}
+
+.icon-scroll .z3 {
+	-webkit-animation-delay: .3s;
+	-moz-animation-delay: .3s;
+	animation-delay: .3s;
 }

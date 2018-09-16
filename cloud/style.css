@@ -1,6 +1,5 @@
 /* page format */
 body{
-  margin: 0;
   padding: 0;
   font-family: sans-serif;
   background: url(bg.jpg) no-repeat center center fixed;
@@ -8,14 +7,18 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  z-index: 100
+  z-index: 100;
+  overflow-x: hidden;
+  margin: 0;
 } /* nav bar */
 .container{
   width: 960px;
   margin: 0 auto;
-  z-index: 100
+  z-index: 100;
+  overflow-x: hidden;
 }
 .header{
+  overflow-x: hidden;
   z-index: 10000;
   width: 105%;
   height: 80px;
@@ -40,7 +43,8 @@ body{
 
 .logo{
 float: left;
-font-family: "Helvetica";
+font-family: 'Raleway', sans-serif;
+text-shadow: 0px 0px 3px #fff;
 font-size: 15px;
 }
 
@@ -58,6 +62,8 @@ padding-top: 13px;
 
 .nav{
 float: right;
+font-family: 'Raleway', sans-serif;
+  text-shadow: 0px 0px 3px #fff;
 }
 
 img.center{
@@ -78,6 +84,7 @@ animation-fill-mode:forwards;
 -webkit-animation-duration:1s;
 -moz-animation-duration:1s;
 animation-duration:1s;
+
 }
 
 .bodytext{
@@ -89,6 +96,7 @@ margin-right: auto;
 color: #fff;
 font-weight: bold;
 cursor: default;
+z-index: -5000;
 -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
 -moz-animation:fadeIn ease-in 1;
 animation:fadeIn ease-in 1;
@@ -100,6 +108,26 @@ animation-fill-mode:forwards;
 -webkit-animation-duration:1s;
 -moz-animation-duration:1s;
 animation-duration:1s;
+}
+
+.cent1{
+  position: relative;
+  top: 960px;
+  left: 0px;
+  height: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  z-index: -10000;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+}
+
+.centtext1{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 100px;
 }
 
 .footer{
@@ -122,6 +150,8 @@ animation-duration:1s;
   top: 100px;
   color: white;
   top: 50%;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 0px 0px 3px #fff;
 }
 
 /* make keyframes that tell the start state and the end state of our object */
