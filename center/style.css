@@ -3,7 +3,6 @@ body{
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: url(bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -25,8 +24,8 @@ body{
   position: relative;
   transform: scale(1.5);
   z-index: -10000;
-  margin-top: 25px;
   overflow-x: hidden;
+  margin: auto;
 }
 
 .container{
@@ -52,11 +51,11 @@ body{
 }
 
 .logo{
-float: left;
-font-family: "Helvetica";
+font-family: "Raleway";
 font-size: 15px;
 position: relative;
-left: 50px;
+  text-shadow: 0px 0px 3px #fff;
+text-align: center;
 }
 
 a{
