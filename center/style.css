@@ -20,9 +20,9 @@ body{
 }
 
 .weather{
-  top: 100px;
+  top: 350px;
   position: relative;
-  transform: scale(1.5);
+  transform: scale(3.8);
   z-index: -10000;
   overflow-x: hidden;
   margin: auto;
