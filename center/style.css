@@ -10,6 +10,8 @@ body{
   background-size: cover;
   z-index: 100;
   overflow: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .cdtimer{
