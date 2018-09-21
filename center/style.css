@@ -22,7 +22,7 @@ body{
 .weather{
   top: 350px;
   position: relative;
-  transform: scale(3.8);
+  transform: scale(1.5);
   z-index: -10000;
   overflow-x: hidden;
   margin: auto;
