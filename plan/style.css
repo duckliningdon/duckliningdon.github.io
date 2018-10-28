@@ -104,44 +104,6 @@ animation-duration:1s;
     -moz-animation-duration: 1s;
     animation-duration: 1s;
 }
-
-
-.footer{
-  position: relative;
-  top: 281px;
-  left: 0px;
-  height: 100px;
-  width: 100%;
-  margin: 0 auto;
-  background-color: black;
-  z-index: -5000;
-  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
-}
-
-.devtext{
-  text-align: left;
-  margin-left: 10%;
-  margin-right: auto;
-  position: relative;
-  color: white;
-  top: 45%;
-  font-family: 'Raleway', sans-serif;
-  text-shadow: 0px 0px 3px #fff;
-  width: 202px;
-}
-
-.footertext{
-  text-align: right;
-  margin-left: auto;
-  margin-right: 10%;
-  position: relative;
-  color: white;
-  top: 26.5%;
-  font-family: 'Raleway', sans-serif;
-  text-shadow: 0px 0px 3px #fff;
-  width: 185px;
-}
-
 /* make keyframes that tell the start state and the end state of our object */
 
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
