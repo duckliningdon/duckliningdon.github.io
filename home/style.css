@@ -1,3 +1,4 @@
+@ -1,902 +0,0 @@
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 /* page format */
 html {
@@ -100,6 +101,8 @@ font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
   text-shadow: 0px 0px 1px #fff;
   margin: 0px auto;
+  position: relative;
+  left: 35%;
 }
 
 .welcometextbody{
@@ -163,7 +166,7 @@ font-family: 'Raleway', sans-serif;
   margin-right: auto;
   position: relative;
   color: white;
-  top: 50%;
+  top: 45%;
   font-family: 'Raleway', sans-serif;
   text-shadow: 0px 0px 3px #fff;
   width: 202px;
@@ -175,7 +178,7 @@ font-family: 'Raleway', sans-serif;
   margin-right: 10%;
   position: relative;
   color: white;
-  top: 31.5%;
+  top: 26.5%;
   font-family: 'Raleway', sans-serif;
   text-shadow: 0px 0px 3px #fff;
   width: 185px;
@@ -547,18 +550,21 @@ font: Open Sans 600, 300
 
 .banana {
   margin: 0;
+  z-index: -5000;
   position: relative;
   text-align: center;
   display: inline-block;
-  top: 34%;
+  top: -132%;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   font-size: 100px;
-  left: 36%;
+  left: 32%;
+  letter-spacing: 510px;
 }
 /*banana*/
 .banana:before {
   content: '🕶';
+  z-index: 10000;
   overflow: hidden;
   position: absolute;
   left: 0;
@@ -596,7 +602,7 @@ font: Open Sans 600, 300
 .bloggggg{
   z-index: 500;
   position: relative;
-  top: 225%;
+  top: 0%;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
@@ -899,4 +905,63 @@ font: Open Sans 600, 300
 	-webkit-animation-delay: .3s;
 	-moz-animation-delay: .3s;
 	animation-delay: .3s;
+}
+
+.card-1 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  background: url(https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fimages.clipartpanda.com%2Fmoon-and-clouds-clipart-Cloud-clip-art-1.png&f=1);
+  background-size: cover;
+  background-position: center;
+    border-radius: 2px;
+    height: 300px;
+    margin: 1rem;
+    position: relative;
+    width: 300px;
+    left: 44%;
+    top: 20%;
+
+}
+
+.card-2 {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    background: url(https://i.imgur.com/GnLS1Lh.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+      border-radius: 2px;
+      height: 300px;
+      margin: 1rem;
+      position: relative;
+      width: 300px;
+      left: 78%;
+      top: -39.7%;
+}
+
+.card-3 {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    background: url(https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.photosinbox.com%2Fdownload%2Fmanila-file-folder.jpg&f=1);
+    background-size: contain;
+    background-position: center;
+      border-radius: 2px;
+      height: 300px;
+      margin: 1rem;
+      position: relative;
+      width: 300px;
+      left: 10%;
+      top: -99.5%;
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-2:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-3:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
