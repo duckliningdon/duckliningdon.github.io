@@ -42,10 +42,10 @@ body{
 }
 
 .logo{
-float: left;
 font-family: 'Raleway', sans-serif;
 text-shadow: 0px 0px 3px #fff;
 font-size: 15px;
+text-align: center;
 }
 
 a{
