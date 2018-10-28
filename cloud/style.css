@@ -31,3 +31,58 @@ body {
 pre {
   margin: 0;
 }
+
+.container{
+  width: 960px;
+  margin: 0 auto;
+  z-index: 100;
+  overflow-x: hidden;
+}
+.header{
+  overflow-x: hidden;
+  z-index: 10000;
+  width: 105%;
+  height: 80px;
+  background-color: #000;
+  top: 0px;
+  position: fixed;
+  opacity: .8;
+  overflow-y: hidden;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.logo{
+float: left;
+font-family: 'Raleway', sans-serif;
+text-shadow: 0px 0px 3px #fff;
+font-size: 15px;
+}
+
+a{
+text-decoration: none;
+color: #fff;
+}
+
+li{
+list-style: none;
+float: left;
+margin-left: 15px;
+padding-top: 13px;
+}
+
+.nav{
+float: right;
+font-family: 'Raleway', sans-serif;
+  text-shadow: 0px 0px 3px #fff;
+}
