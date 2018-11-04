@@ -76,14 +76,14 @@ font-family: 'Raleway', sans-serif;
 .welcomeslider{
   position: relative;
   left: 0px;
-  height: 1001px;
+  height: 1025px;
   width: 100%;
   margin: 0px auto;
   background-color: black;
   z-index: -10000;
   box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
   opacity: 0.5;
-  top: -45px;
+  top: -27px;
 }
 
 .welcometextcontent{
@@ -118,14 +118,39 @@ font-family: 'Raleway', sans-serif;
 
 .cent1{
   position: relative;
-  top: -51px;
+  top: -162px;
   left: 0px;
-  height: 530px;
+  height: 1530px;
   width: 100%;
   margin: 0 auto;
   background-color: white;
   z-index: -10000;
   box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+}
+
+.helloitsme{
+  color: black;
+  font-size: 80px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 0px 0px 1px #fff;
+  margin: 0px auto;
+  position: relative;
+  top: 9%;
+}
+
+.hellobox {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    background-size: contain;
+    background-position: center;
+      border-radius: 25px;
+      height: 750px;
+      margin: 1rem;
+      position: relative;
+      width: 1050px;
+      left: 20%;
+      top: 40%;
 }
 
 .cent2{
@@ -150,8 +175,6 @@ font-family: 'Raleway', sans-serif;
 
 .footer{
   position: relative;
-  top: 1060px;
-  left: 0px;
   height: 100px;
   width: 100%;
   margin: 0 auto;
@@ -602,7 +625,7 @@ font: Open Sans 600, 300
 .bloggggg{
   z-index: 500;
   position: relative;
-  top: 0%;
+  top: -1650px;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
@@ -620,7 +643,6 @@ font: Open Sans 600, 300
   border-radius: 25px;
   height: 400px;
   transition: all .3s;
-  top: -540px;
 }
 @media screen and (max-width: 992px) {
   .blog-slider {
