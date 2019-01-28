@@ -1,0 +1,64 @@
+/* page format */
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 100;
+  overflow: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.cdtimer{
+  position: fixed;
+  top: 63px;
+  left: 535px;
+}
+
+.weather{
+  top: 350px;
+  position: relative;
+  transform: scale(1.5);
+  z-index: -10000;
+  overflow-x: hidden;
+  margin: auto;
+}
+
+.container{
+  width: 960px;
+  margin: 0 auto;
+  overflow-y: hidden;
+  z-index: 10000;
+}
+
+.header{
+  z-index: 10000;
+  width: 105%;
+  height: 80px;
+  background-color: #000;
+  top: 0px;
+  position: fixed;
+  opacity: 1;
+  overflow-y: hidden;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+}
+
+.logo{
+font-family: "Raleway";
+font-size: 15px;
+position: relative;
+  text-shadow: 0px 0px 3px #fff;
+text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}

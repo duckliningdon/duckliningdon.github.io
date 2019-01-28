@@ -1,0 +1,42 @@
+html {
+	// Update this value to move sunglasses up and down
+	--sunglassoffset: -25px;
+}
+
+
+
+// Setup.
+$bg: radial-gradient(ellipse at center, #a3dbfd 33%, #4fb3d5 100%);
+$bg-slack: white;
+
+html {	
+	height: 100%;
+	background: $bg;
+}
+
+body {
+	height: 100%;
+	text-align: center;
+}
+
+.banana {
+	margin: 0;
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 100px;
+
+	&:before {
+		content: '🕶';
+		overflow: hidden;
+		position: absolute;
+		left: 0;
+		top: 0;
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		transform: translate(-18px, var(--sunglassoffset)) scale(0.4);
+	}
+}
