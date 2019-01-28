@@ -153,16 +153,3 @@ body{
   50%  {top: 17px}
   100%  {top: 13px}
 }
-
-/* scrapped code
-
-.line-separatortop{
-  height: 1px;
-  background: #9e9898;
-  border-bottom: 1px solid #313030;
-  position: relative;
-  top: 23px;
-  margin: 0 auto;
-  width: 80%;
-}
-*/
