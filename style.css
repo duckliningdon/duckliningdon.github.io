@@ -33,13 +33,21 @@ body{
   position: absolute;
   width: 145px;
   height: 15px;
-  animation-name: scrollDown;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
   bottom: 25px;
   right: 25%;
   left: 50%;
   margin-left: -65px;
+  -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 5s; /* Firefox < 16 */
+       -ms-animation: fadein 5s; /* Internet Explorer */
+        -o-animation: fadein 5s; /* Opera < 12.1 */
+           animation: fadein 5s;
+}
+
+.animation{
+  animation-name: scrollDown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 .undertext{
@@ -73,6 +81,15 @@ body{
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
   line-height: 130%;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 2s; /* Firefox < 16 */
+       -ms-animation: fadein 2s; /* Internet Explorer */
+        -o-animation: fadein 2s; /* Opera < 12.1 */
+           animation: fadein 2s;
+    animation-name: hoverFlashMain;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  text-shadow: 2px 2px 8px #6C6C6C;
 }
 
 /* nav bar */
@@ -85,6 +102,11 @@ body{
     transition: top 0.3s;
     z-index: 1000;
     left: 0%;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 2s; /* Firefox < 16 */
+       -ms-animation: fadein 2s; /* Internet Explorer */
+        -o-animation: fadein 2s; /* Opera < 12.1 */
+           animation: fadein 2s;
 }
 
 #navbar a {
@@ -98,6 +120,9 @@ body{
 
 #navbar a:hover {
     text-shadow: 0px 0px 8px #FFF;
+    animation-name: hoverFlash;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 .navbar a.active{
@@ -155,6 +180,8 @@ body{
 
 /* ALL KEYFRAMES */
 
+/* Scroll Down */
+
 @keyframes scrollDown{
   0%  {opacity: .9;}
   50%  {opacity: .6;}
@@ -167,6 +194,44 @@ body{
   100%  {top: 13px}
 }
 
+/* Load Fade-ins*/
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Hover Flashes */
+
+@keyframes hoverFlash{
+  0%  {text-shadow: 0px 0px 8px #FFF;}
+  50%  {text-shadow: 0px 0px 15px #FFF;}
+  100%  {text-shadow: 0px 0px 8px #FFF;}
+}
+
+@keyframes hoverFlashMain{
+  0%  {text-shadow: 2px 2px 8px #6C6C6C;}
+  50%  {text-shadow: 2px 2px 12px #6C6C6C;}
+  100%  {text-shadow: 2px 2px 8px #6C6C6C;}
+}
 /* scrapped code
 
 .line-separatortop{
