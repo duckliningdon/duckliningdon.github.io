@@ -9,7 +9,12 @@ body{
   background-size: cover;
   z-index: 100;
   overflow-x: hidden;
-  margin: 0;
+}
+
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    width:960px;
 }
 
 /* first screen */
@@ -19,22 +24,22 @@ body{
   width: 90px;
   height: 25px;
   top: 50%;
-  left: 51%;
+  left: 50%;
+  margin-top: -50px;
   margin-left: -50px;
-  margin-top: -25px;
 }
 
 .scrolldowntext{
   position: absolute;
   width: 145px;
   height: 15px;
-  margin-left: -50px;
-  margin-top: -16px;
-  bottom: 3%;
-  left: 49.5%;
   animation-name: scrollDown;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+  bottom: 25px;
+  right: 25%;
+  left: 50%;
+  margin-left: -65px;
 }
 
 .undertext{
@@ -79,6 +84,7 @@ body{
     width: 100%;
     transition: top 0.3s;
     z-index: 1000;
+    left: 0%;
 }
 
 #navbar a {
@@ -91,8 +97,7 @@ body{
 }
 
 #navbar a:hover {
-    background-color: #66FCF1;
-    color: black;
+    text-shadow: 0px 0px 8px #FFF;
 }
 
 .navbar a.active{
@@ -104,9 +109,13 @@ body{
   float: none;
   position: absolute;
   top: 50%;
-  left: 3%;
+  left: 4%;
   transform: translate(-50%, -50%);
-  background-color: #45A29E;
+  background-color: #292929;
+  color: #fff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
 }
 
 .nav-right{
@@ -121,6 +130,7 @@ body{
   top: 105%;
   width: 100%;
   height: 5%;
+  left: 0%;
 }
 
 .secondsection{
@@ -128,18 +138,21 @@ body{
   position: absolute;
   top: 110%;
   width: 100%;
-  height: 100%;
+  height: 105%;
+  left: 0%;
 }
 
-.wip{
-  margin: auto;
-  text-align: center;
-  margin-top: 23%;
-  font-size: 50px;
-  font-style: italic;
-  text-shadow: 2px 2px #ff0000;
-  color: #000;
+.karson{
+    background-image: url(media/reasons.png);
+    background-repeat: no-repeat;
+    width: 492px;
+    height: 162px;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    top: 10%;
 }
+
 /* ALL KEYFRAMES */
 
 @keyframes scrollDown{
@@ -153,3 +166,16 @@ body{
   50%  {top: 17px}
   100%  {top: 13px}
 }
+
+/* scrapped code
+
+.line-separatortop{
+  height: 1px;
+  background: #9e9898;
+  border-bottom: 1px solid #313030;
+  position: relative;
+  top: 23px;
+  margin: 0 auto;
+  width: 80%;
+}
+*/
