@@ -167,17 +167,93 @@ body{
   left: 0%;
 }
 
-.karson{
-    background-image: url(media/reasons.png);
-    background-repeat: no-repeat;
-    width: 492px;
-    height: 162px;
-    margin: 0 auto;
-    padding: 10px;
-    position: relative;
-    top: 10%;
+.elegancebydesign{
+  cursor: default;
+  opacity: 0;
 }
 
+.elegance1{
+
+  font-size: 18em;
+  color: #000;
+  opacity: 0.2;
+  position: absolute;
+  left: 36%;
+  top: 10%;
+}
+
+.elegance2{
+
+  font-size: 18em;
+  color: #000;
+  opacity: 0.04;
+  position: absolute;
+  left: 35%;
+  top: 8%;
+}
+
+.bydesign1{
+
+  font-size: 10em;
+  color: #000;
+  opacity: 0.8;
+  position: absolute;
+  left: 33%;
+  top: 26%;
+}
+
+.bydesign2{
+
+  font-size: 10em;
+  color: #000;
+  opacity: 0.1;
+  position: absolute;
+  left: 33%;
+  top: 27%;
+}
+
+.bydesign3{
+
+  font-size: 10em;
+  color: #000;
+  opacity: 0.05;
+  position: absolute;
+  left: 33%;
+  top: 28%;
+}
+
+#sstdemo{
+  opacity: 0;
+}
+
+.sst1{
+  width: 13%;
+  font-size: 3em;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  line-height: 71%;
+}
+
+.sst11{
+  font-family: 'Oswald', sans-serif;
+}
+
+.sst12{
+  font-family: 'Raleway', sans-serif;
+}
+
+.sst13{
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  top: 9%;
+  left: 26%;
+  text-align: right;
+}
+
+.no{
+
+}
 /* ALL KEYFRAMES */
 
 /* Scroll Down */
