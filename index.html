@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
     <meta name="viewport"
@@ -47,9 +48,11 @@
 
     <div class="firstsection"></div>
     <div class="secondsection">
-      <div class="elegancebydesign">
+      <div class="elegancebydesign1">
       <div class="elegance1">elegance</div>
       <div class="elegance2">elegance</div>
+      </div>
+      <div class="elegancebydesign2">
       <div class="bydesign1">by design.</div>
       <div class="bydesign2">by design.</div>
       <div class="bydesign3">by design.</div>
@@ -63,30 +66,35 @@
               <p>i don't know what to put here.</p>
             </div>
             <div class="sst13">
-              <p>for now, heres a picture of a hot dog with toothpaste on it..</p>
+              <p>for now, heres a few links..</p>
             </div>
-
-            <script src="typeWriter.js"></script>
-            <script>
-            let below = false;
-              window.onscroll = () => {
-
-                const Ypos = window.pageYOffset;
-
-                if(Ypos > 200 && !below) {
-
-                  below = true;
-                  typeWriter("#sstdemo","true",20);
-                }
-              }
-            </script>
         </div>
+        <div class="linklist">
+          <ul>
+            <li class="active"><a href="#">home</a></li>
+            <li><a href="chat/index.html">chat</a></li>
+            <li><a href="#">idk</a></li>
+            <li><a href="about/index.html">about</a></li>
+          </ul>
+        </div>
+
+        <script src="typeWriter.js"></script>
+        <script>
+        let below = false;
+          window.onscroll = () => {
+
+            const Ypos = window.pageYOffset;
+
+            if(Ypos > 200 && !below) {
+
+              below = true;
+              typeWriter("#sstdemo","true",20);
+            }
+          }
+        </script>
+
       </div>
-          <!--  <div class="no">no?</div> then when clicked no have it retype in "ok how about this? and then show a picture i dont know yet" -->
 
-
-
-    </div>
 
 </div>
   </body>
