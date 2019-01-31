@@ -2,7 +2,6 @@
 body{
   padding: 0;
   font-family: sans-serif;
-  background: url(media/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -17,12 +16,38 @@ body{
     width:960px;
 }
 
+.aboutme{
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 0.1em 0.3em;
+  width: 30%;
+  font-family: "Inconsolata", sans-serif;
+  font-size: 6em;
+  position: absolute;
+  top: 16%;
+  left: 33%;
+}
+
+.aboutimage{
+    background-repeat: no-repeat;
+    width: 1920px;
+    height: 600px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
 #sstdemo{
-  opacity: 1;
 }
 
 .sst1{
 
+  position: absolute;
+  top: 60%;
+  font-family: 'Raleway', sans-serif;
+  left: 42%;
+  font-size: 1.5em;
 }
 
 .sst12{
@@ -34,11 +59,11 @@ body{
 .linklist{
 
   position: absolute;
-  top: 54%;
-  left: 40%;
+  top: 70%;
+  left: 39%;
   margin-top: -50px;
   margin-left: -50px;
-  width: 500px;
+  width: 529px;
   height: 60px;
 }
 
@@ -76,4 +101,21 @@ li.active a {
   color: #333;
 }
 
+.bodycontainer{
+
+  width: 42%;
+  height: 500px;
+  position: absolute;
+  top: 72%;
+  font-family: "Inconsolata", sans-serif;
+  left: 30%;
+}
+
+.bodyp1{
+
+}
+
+.bodyp2{
+  
+}
 /* ALL KEYFRAMES */

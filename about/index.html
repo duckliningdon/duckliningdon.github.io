@@ -22,42 +22,42 @@
         </head>
   <body style="z-index: -1; height: 10px;">
 <div id="wrapper">
-       <script type="text/javascript" src="jQuery-3.3.1.js"></script>
-       <script src="../index.js"></script>
+  <img src="../media/about.jpg-"class="aboutimage"/>
+  <div class="aboutme">about me.</div>
       <div id="sstdemo">
         <div class="sst1">
             <div class="sst12">
-              <p>here is this again</p>
+              <p>i'll just put this here for now..</p>
             </div>
         </div>
             <div class="linklist">
               <ul>
-                <li class="active"><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
                 <li><a href="chat/index.html">chat</a></li>
                 <li><a href="#">idk</a></li>
-                <li><a href="about/index.html">about</a></li>
+                <li class="active"><a href="about/index.html">about</a></li>
               </ul>
+              <hr>
             </div>
+
+            <script src="../typeWriter.js"></script>
+            <script>
+              typeWriter("#sstdemo","true",20);
+            </script>
+          </div>
+          <div class="bodycontainer">
+            <div class="bodyp1">
+              <p>hi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ex diam, accumsan id nibh id, molestie fermentum tellus. Nunc posuere nec est sed convallis. Suspendisse feugiat suscipit sapien et posuere. Maecenas eu lacinia justo, nec posuere tellus. Integer accumsan leo nec imperdiet accumsan. Etiam egestas mi eget mattis fringilla. Mauris in augue faucibus, pulvinar diam pellentesque, auctor arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis vitae metus vestibulum, cursus mauris nec, mattis est. Vivamus cursus lacus eget convallis aliquet. Nunc varius lectus id arcu iaculis ultrices. Donec fringilla, neque vitae dapibus auctor, enim lectus mollis odio, at auctor enim dolor nec purus. </p>
+            </div>
+            <div class="bodyp2">
+              <p>hi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ex diam, accumsan id nibh id, molestie fermentum tellus. Nunc posuere nec est sed convallis. Suspendisse feugiat suscipit sapien et posuere. Maecenas eu lacinia justo, nec posuere tellus. Integer accumsan leo nec imperdiet accumsan. Etiam egestas mi eget mattis fringilla. Mauris in augue faucibus, pulvinar diam pellentesque, auctor arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis vitae metus vestibulum, cursus mauris nec, mattis est. Vivamus cursus lacus eget convallis aliquet. Nunc varius lectus id arcu iaculis ultrices. Donec fringilla, neque vitae dapibus auctor, enim lectus mollis odio, at auctor enim dolor nec purus. </p>
+            </div>
+
           </div>
 
-        <script src="../typeWriter.js"></script>
-        <script>
-        let below = false;
-          window.onscroll = () => {
 
-            const Ypos = window.pageYOffset;
-
-            if(Ypos > 200 && !below) {
-
-              below = true;
-              typeWriter("#sstdemo","true",20);
-            }
-          }
-        </script>
-
+        <script type="text/javascript" src="jQuery-3.3.1.js"></script>
+        <script src="../index.js"></script>
       </div>
-
-
-</div>
   </body>
 </html>
