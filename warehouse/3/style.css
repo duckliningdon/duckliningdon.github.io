@@ -1,0 +1,371 @@
+/* main page format */
+body{
+  padding: 0;
+  font-family: sans-serif;
+  background: url(media/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 100;
+  overflow-x: hidden;
+}
+
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    width:960px;
+}
+
+/* first screen */
+
+.main{
+  position: absolute;
+  width: 90px;
+  height: 25px;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+
+.scrolldowntext{
+  position: absolute;
+  width: 145px;
+  height: 15px;
+  bottom: 25px;
+  right: 25%;
+  left: 50%;
+  margin-left: -65px;
+  -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 5s; /* Firefox < 16 */
+       -ms-animation: fadein 5s; /* Internet Explorer */
+        -o-animation: fadein 5s; /* Opera < 12.1 */
+           animation: fadein 5s;
+}
+
+.animation{
+  animation-name: scrollDown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.undertext{
+  position: absolute;
+  bottom: 20%;
+  font-size: 0.75em;
+  color: #fff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-family: 'Roboto:300', sans-serif;
+  line-height: 130%;
+  white-space: nowrap;
+}
+
+.fa-angle-double-down{
+  height: 25px;
+  width: 25px;
+  color: #fff;
+  position: absolute;
+  left: 45%;
+  top: 100%;
+  animation-name: arrowDown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.maintext{
+  font-size: 1.5em;
+  color: #fff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  line-height: 130%;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 2s; /* Firefox < 16 */
+       -ms-animation: fadein 2s; /* Internet Explorer */
+        -o-animation: fadein 2s; /* Opera < 12.1 */
+           animation: fadein 2s;
+    animation-name: hoverFlashMain;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  text-shadow: 2px 2px 8px #6C6C6C;
+}
+
+/* nav bar */
+
+#navbar {
+    background-color: #000;
+    position: fixed;
+    top: -50px;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 1000;
+    left: 0%;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 2s; /* Firefox < 16 */
+       -ms-animation: fadein 2s; /* Internet Explorer */
+        -o-animation: fadein 2s; /* Opera < 12.1 */
+           animation: fadein 2s;
+}
+
+#navbar a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    text-shadow: 0px 0px 8px #FFF;
+    animation-name: hoverFlash;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.navbar a.active{
+  background-color: #47BFB9;
+  color: white;
+}
+
+.nav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 4%;
+  transform: translate(-50%, -50%);
+  background-color: #292929;
+  color: #fff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-right{
+  float: right;
+}
+
+/* second screen */
+
+.firstsection{
+  background-color: #000;
+  position: absolute;
+  top: 105%;
+  width: 100%;
+  height: 5%;
+  left: 0%;
+}
+
+.secondsection{
+  background-color: #fff;
+  position: absolute;
+  top: 110%;
+  width: 100%;
+  height: 105%;
+  left: 0%;
+}
+
+.elegancebydesign1{
+  cursor: default;
+  opacity: 0;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.elegancebydesign2{
+  cursor: default;
+  opacity: 0;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.elegance1{
+  font-size: 18em;
+  color: #000;
+  opacity: 0.2;
+  position: absolute;
+  left: 36%;
+  top: 10%;
+}
+
+.elegance2{
+  font-size: 18em;
+  color: #000;
+  opacity: 0.04;
+  position: absolute;
+  left: 35%;
+  top: 8%;
+}
+
+.bydesign1{
+  font-size: 10em;
+  color: #000;
+  opacity: 0.8;
+  position: absolute;
+  left: 33%;
+  top: 26%;
+  width: 300%;
+}
+
+.bydesign2{
+  font-size: 10em;
+  color: #000;
+  opacity: 0.1;
+  position: absolute;
+  left: 33%;
+  top: 27%;
+  width: 300%;
+}
+
+.bydesign3{
+  font-size: 10em;
+  color: #000;
+  opacity: 0.05;
+  position: absolute;
+  left: 33%;
+  top: 28%;
+  width: 300%;
+}
+
+#sstdemo{
+  opacity: 0;
+}
+
+.sst1{
+  width: 13%;
+  font-size: 3em;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  line-height: 71%;
+}
+
+.sst11{
+  font-family: 'Oswald', sans-serif;
+}
+
+.sst12{
+  font-family: 'Raleway', sans-serif;
+}
+
+.sst13{
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  top: 9%;
+  left: 26%;
+  text-align: right;
+}
+
+/* links */
+
+.linklist{
+
+  position: absolute;
+  top: 54%;
+  left: 40%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 500px;
+  height: 60px;
+}
+
+ul {
+  overflow: auto;
+  list-style-type: none;
+}
+
+li {
+  height: 25px;
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #aaa;
+  padding: 0 20px;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #ccc;
+  font: 25px/1 Helvetica, Verdana, sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease;
+}
+
+li a:hover {
+  color: #666;
+}
+
+li.active a {
+  font-weight: bold;
+  color: #333;
+}
+
+/* ALL KEYFRAMES */
+
+/* Scroll Down */
+
+@keyframes scrollDown{
+  0%  {opacity: .9;}
+  50%  {opacity: .6;}
+  100%  {opacity: .9;}
+}
+
+@keyframes arrowDown{
+  0%  {top: 13px}
+  50%  {top: 17px}
+  100%  {top: 13px}
+}
+
+/* Load Fade-ins*/
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Hover Flashes */
+
+@keyframes hoverFlash{
+  0%  {text-shadow: 0px 0px 8px #FFF;}
+  50%  {text-shadow: 0px 0px 15px #FFF;}
+  100%  {text-shadow: 0px 0px 8px #FFF;}
+}
+
+@keyframes hoverFlashMain{
+  0%  {text-shadow: 2px 2px 8px #6C6C6C;}
+  50%  {text-shadow: 2px 2px 12px #6C6C6C;}
+  100%  {text-shadow: 2px 2px 8px #6C6C6C;}
+}
+/* scrapped code
+
+.line-separatortop{
+  height: 1px;
+  background: #9e9898;
+  border-bottom: 1px solid #313030;
+  position: relative;
+  top: 23px;
+  margin: 0 auto;
+  width: 80%;
+}
+*/
