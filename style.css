@@ -8,6 +8,7 @@ body{
     background-size: cover;
     z-index: 100;
     overflow-x: hidden;
+    position: fixed;
   }
   
 .winninv{
@@ -50,3 +51,7 @@ body{
 .btn-group button:hover {
     background-color: #e6e6e6;
   }
+
+.temp{
+    color: #fff;
+}
