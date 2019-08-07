@@ -1,0 +1,52 @@
+body{
+    padding: 0;
+    font-family: sans-serif;
+    background: url(media/bg3.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 100;
+    overflow-x: hidden;
+  }
+  
+.winninv{
+    height: 150px;
+    width: 150px;
+    position: fixed; /* or absolute */
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+    transform: translate(15%, -100%);
+  }
+
+.btn-group{
+    height: 150px;
+    width: 150px;
+    position: fixed; /* or absolute */
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+    transform: translate(15%, 15%);
+}
+
+.btn-group button {
+    background-color: rgb(251, 253, 251); /* Green background */
+    border: 1px solid rgb(5, 5, 5); /* Green border */
+    color: rgb(0, 0, 0); /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 100%; /* Set a width if needed */
+    margin-top: 5px; 
+  }
+  
+.btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+  }
+  
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #e6e6e6;
+  }
