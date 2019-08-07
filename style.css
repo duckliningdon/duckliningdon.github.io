@@ -8,8 +8,7 @@ body{
     background-size: cover;
     z-index: 100;
     overflow-x: hidden;
-    position: fixed;
-  }
+}
   
 .winninv{
     height: 150px;
@@ -20,7 +19,7 @@ body{
     margin-top: -50px;
     margin-left: -100px;
     transform: translate(15%, -100%);
-  }
+}
 
 .btn-group{
     height: 150px;
@@ -41,16 +40,16 @@ body{
     cursor: pointer; /* Pointer/hand icon */
     width: 100%; /* Set a width if needed */
     margin-top: 5px; 
-  }
+}
   
 .btn-group button:not(:last-child) {
     border-bottom: none; /* Prevent double borders */
-  }
+}
   
 /* Add a background color on hover */
 .btn-group button:hover {
     background-color: #e6e6e6;
-  }
+}
 
 .temp{
     color: #fff;
