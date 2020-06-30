@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>hello.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="media/sci.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <body>
+    <script> 
+            $(function() {
+
+      var fixed = document.getElementById('fixed'), overflow;
+
+      $(window).on('load resize', function() {
+
+      overflow = fixed.scrollHeight-$('#fixed').height();
+      });
+
+      fixed.on('touchmove', function() {
+
+      if (overflow) return true;
+      else return false;
+      });
+      });
+      </script>
+
+      <img class=winninv src="media/winninv.png">
+      <span class=temp>test 2</span>
+      <div class="btn-group">
+        <button>Timer</button>
+        <button>Workouts</button>
+      </div>
+  </body>
+</html>
