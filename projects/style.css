@@ -114,8 +114,8 @@ text-shadow: 0px 0px 3px #fff;
 }
 
 .cent{
-  position: relative;
-  top: -100%;
+  position: absolute;
+  top: 2%;
   left: 0px;
   height: 1530px;
   width: 100%;
@@ -152,13 +152,13 @@ text-shadow: 0px 0px 3px #fff;
     background-size: contain;
     background-position: center;
     background-color: #f1f1f1;
-      border-radius: 1%;
-      height: 5%;
-      margin: 1rem;
-      position: relative;
-      width: 50%;
-      left: 25%;
-      top: 8%;
+    border-radius: 1%;
+    height: 4vw;
+    margin: 1rem;
+    position: relative;
+    width: 50%;
+    left: 25%;
+    top: 8%;
 }
 
 /* Float four columns side by side */
@@ -169,7 +169,7 @@ text-shadow: 0px 0px 3px #fff;
 }
 
 /* Remove extra left and right margins, due to padding in columns */
-.row1 {margin: 0 -5px;position: absolute;top: 16%;left: 17%;width: 80%;}
+.row1 {margin: 0rem;position: relative;top: 9%;left: 17%;width: 80%;}
 
 /* Clear floats after the columns */
 .row1:after {
@@ -179,7 +179,7 @@ text-shadow: 0px 0px 3px #fff;
 }
 
 /* Remove extra left and right margins, due to padding in columns */
-.row2 {margin: 0 -5px;position: absolute;top: 42%;left: 17%;width: 80%;}
+.row2 {margin: 0rem;position: absolute;top: 42%;left: 17%;width: 80%;}
 
 /* Clear floats after the columns */
 .row2:after {
@@ -197,7 +197,7 @@ text-shadow: 0px 0px 3px #fff;
 }
 
 .projectimage {
-  width: 14vw;
+  width: initial;
   height: 14vw;
 }
 
@@ -233,13 +233,14 @@ text-shadow: 0px 0px 3px #fff;
 }
 
 .footer{
-  position: relative;
+  position: absolute;
   height: 100px;
   width: 100%;
   margin: auto;
   background-color: black;
   z-index: -5000;
   box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+  bottom: -57%;
 }
 
 .devtext{
