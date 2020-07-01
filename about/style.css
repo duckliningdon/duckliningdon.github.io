@@ -12,7 +12,7 @@ html {
 body{
   padding: 0;
   font-family: sans-serif;
-  background: url(bg.jpg) no-repeat center center fixed;
+  background: url(../media/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -122,9 +122,19 @@ text-shadow: 0px 0px 3px #fff;
   height: 1530px;
   width: 100%;
   margin: -25px auto;
-  background-color: white;
   z-index: -10000;
   box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+  opacity: 1;
+}
+
+.cent::before{
+  content: "";
+ position: absolute;
+ top: 0px;
+ right: 0px;
+ bottom: 0px;
+ left: 0px;
+ background-color: rgba(251, 251, 251, 0.25);
 }
 
 .infoboxtext{
