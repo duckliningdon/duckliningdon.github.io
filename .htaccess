@@ -16,7 +16,7 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 
 RewriteRule ^(.*)$ $1.html [NC,L]
 
-AuthType Basic  
-AuthName "restricted area"  
+AuthType Basic
+AuthName "restricted area"
 AuthUserFile file:///C:/Users/Reds2/Documents/GitHub/duckliningdon.github.io/.htpasswd
 require valid-user

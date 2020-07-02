@@ -159,54 +159,100 @@ padding-top: 13px;
   position: absolute;
   top: 103%;
   left: 0%;
-  height: 1530px;
+  height: 1800px;
   width: 100%;
   margin: -25px auto;
-  background-color: white;
+  background-color: #f3f3f3;
   z-index: -10000;
   box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
 }
 
 .infoboxtext{
   color: black;
-  font-size: 6vw;
+  font-size: 36px;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open sans', sans-serif;
   text-shadow: 0px 0px 1px #fff;
   margin: 0px auto;
   position: relative;
-  top: 9%;
+  top: 20%;
+  border-bottom: 0.5px solid currentColor;
+  width: 20%;
 }
 
 .infobox {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0px 0px 20px 8px rgba(0,0,0,0.16);
     background-size: contain;
     background-position: center;
-      border-radius: 3%;
-      height: 40vw;
-      margin: 1rem;
-      position: relative;
-      width: 50%;
-      left: 25%;
-      top: 10%;
+    height: 250px;
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 5%;
+    background-color: #fff;
 }
 
-.motd {
-  height: 25vw;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+.infobody{
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Open sans', sans-serif;
+  text-shadow: 0px 0px 1px #fff;
+  margin: 0px auto;
+  position: relative;
+  top: 25%;
+  width: 44%;
+  line-height: 1.5;
+}
+
+.projectboxtext{
+  color: black;
+  font-size: 36px;
+  text-align: center;
+  font-family: 'Open sans', sans-serif;
+  text-shadow: 0px 0px 1px #fff;
+  margin: 0px auto;
+  position: relative;
+  top: 5%;
+  border-bottom: 0.5px solid currentColor;
+  width: 40%;
+}
+
+.projectbox {
+    box-shadow: 0px 0px 20px 8px rgba(0,0,0,0.16);
+    background-size: contain;
+    background-position: center;
+    height: 64vw;
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 50%;
+    background-color: #fff;
+}
+
+.projectbody{
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Open sans', sans-serif;
+  text-shadow: 0px 0px 1px #fff;
+  margin: 0px auto;
+  position: relative;
+  top: 10%;
+  width: 100%;
+  line-height: 1.5;
 }
 
 .footer{
-  position: absolute;
+  position: relative;
   height: 100px;
   width: 100%;
   margin: auto;
   background-color: black;
-  z-index: -5000;
+  z-index: 1;
   box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
   left: 0%;
-  bottom: -159%;
+  top: 100%;
 }
 
 .devtext{
@@ -259,7 +305,7 @@ make keyframes that tell the start state and the end state of our object
 .bloggggg{
   z-index: 500;
   position: relative;
-  top: 2%;
+  top: 22%;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
@@ -362,7 +408,7 @@ make keyframes that tell the start state and the end state of our object
   width: 300px;
   flex-shrink: 0;
   height: 300px;
-  background-image: linear-gradient(147deg, #39c7fe 0%, #4738fd 74%);
+  background-image: linear-gradient(147deg, #dadada 0%, #000000 74%);
   box-shadow: 4px 13px 30px 1px rgba(166, 166, 166, 0.77);
   border-radius: 20px;
   transform: translateX(-80px);
@@ -443,7 +489,7 @@ make keyframes that tell the start state and the end state of our object
 }
 .blog-slider__button {
   display: inline-flex;
-  background-image: linear-gradient(147deg, #39c7fe 0%, #4738fd 74%);
+  background-image: linear-gradient(147deg, #dadada 0%, #000000 74%);
   padding: 15px 35px;
   border-radius: 50px;
   color: #fff;
@@ -505,9 +551,9 @@ make keyframes that tell the start state and the end state of our object
 }
 .blog-slider__pagination .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #5f51ff;
+  background: #565656;
   height: 30px;
-  box-shadow: 0px 0px 20px rgba(252, 56, 56, 0.3);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.51);
 }
 @media screen and (max-width: 768px) {
   .blog-slider__pagination .swiper-pagination-bullet-active {
@@ -562,4 +608,231 @@ make keyframes that tell the start state and the end state of our object
 	-webkit-animation-delay: .3s;
 	-moz-animation-delay: .3s;
 	animation-delay: .3s;
+}
+
+/* Grid */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 1.5rem;
+}
+
+.overlay {
+  position: relative;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+   transition: .5s ease;
+   background-color: #888888;
+}
+
+
+.gallery__item--1:hover .overlay {
+  opacity: 0.8;
+}
+
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 2;  */
+  /* grid-row: 1 / span 2; */
+  box-shadow: 4px 3px 8px 1px #969696;
+  display: block;
+  background: url(../projects/media/flash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery__text--1 {
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-style: 'Open sans', sans-serif;
+}
+
+.gallery__item--2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  /** Alternative Syntax **/
+  /* grid-column: 3 / span 2;  */
+  /* grid-row: 1 / span 2; */
+  box-shadow: 4px 3px 8px 1px #969696;
+  display: block;
+  background: url(../projects/media/tiefighter.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery__item--2:hover .overlay {
+  opacity: 0.8;
+}
+
+.gallery__text--2 {
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-style: 'Open sans', sans-serif;
+}
+
+.gallery__item--3 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4;
+  grid-row: 1 / span 5; */
+  box-shadow: 4px 3px 8px 1px #969696;
+  display: block;
+  background: url(../projects/media/helmet2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery__item--3:hover .overlay {
+  opacity: 0.8;
+}
+
+.gallery__text--3 {
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-style: 'Open sans', sans-serif;
+}
+
+.gallery__item--4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4;  */
+  /* grid-row: 3 / span 3; */
+  box-shadow: 4px 3px 8px 1px #969696;
+  display: block;
+  background: url(../projects/media/toygun.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery__text--4 {
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-style: 'Open sans', sans-serif;
+}
+
+.gallery__item--4:hover .overlay {
+  opacity: 0.8;
+}
+
+.gallery__item--5 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 9;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4; */
+  /* grid-row: 6 / span 3; */
+  box-shadow: 4px 3px 8px 1px #969696;
+  display: block;
+  background: url(../projects/media/bd1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery__item--5:hover .overlay {
+  opacity: 0.8;
+}
+
+.gallery__text--5 {
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-style: 'Open sans', sans-serif;
+}
+
+.gallery__item--6 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 9;
+
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4; */
+  /* grid-row: 6 / span 3; */
+  box-shadow: 4px 3px 8px 1px #969696;
+  display: block;
+  background: url(../projects/media/kenobi.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery__item--6:hover .overlay {
+  opacity: 0.8;
+}
+
+.gallery__text--6 {
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-style: 'Open sans', sans-serif;
 }
