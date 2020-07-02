@@ -107,6 +107,10 @@ margin-left: 15px;
 padding-top: 13px;
 }
 
+p{
+  font-size: 13px;
+}
+
 .nav{
 float: right;
 font-family: 'Raleway', sans-serif;
@@ -215,6 +219,14 @@ text-shadow: 0px 0px 3px #fff;
   width: 77vw;
   height: 57vw;
   background-color: white;
+  line-height: 0.5;
+}
+
+.specifications{
+  background-image: url(media/ender3pro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 45%;
 }
 
 .helmetmakingprocess{
