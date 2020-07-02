@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Home | Swedberg Industries</title>
+    <meta name="description" content="Swedberg Industries is a personal webstie for a future engineer and prop making/eletrical hobbist."/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../media/dv.ico">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    </head>
+        <script language="javascript">
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+          location.href = '/mobile.html';}
+        </script>
+
+<body style="z-index: -1; height: 0px;">
+<!--- Nav Bar --->
+  <div style="z-index: 10000" class="header">
+    <div class="container">
+      <div class="logo">
+        <a href="https://swedbergindustries.tk"><div class="swedbergindustries">SWEDBERG INDUSTRIES</div></a>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a class="navunderline" href="projects">PROJECTS</a></li>
+          <li><a class="navunderline" href="references">REFERENCES</a></li>
+          <li><a class="navunderline" href="jarvis">JARVIS</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="fullscreen-bg">
+      <video loop muted autoplay poster="img/videoframe.jpg">
+          <source src="../media/ironman2.mp4" type="video/mp4">>
+      </video>
+  </div>
+<!--- Welcome Text --->
+<div class="welcomeslider">
+  <div class="welcometextcontent">
+    <div id="sstdemo" style="opacity: 0" onload="document.getElementById(test).style.opacity='1'">
+      <span class="welcometextheader">404.</span>
+      <div class="welcometextbody">
+        <div id="quote"></div>
+      </div>
+      <div class="returnhome">
+        <a href=https://swedbergindustries.tk>Return Home.</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="jarvisgreetings.js"></script>
+  <script src="../media/typeWriter.js"></script>
+  <script>
+    function textFade(){
+      $("#sstdemo").animate({'opacity':'1'},1500);
+    }
+
+    window.onload = typeWriter("#sstdemo","true",30);
+    window.onload = textFade;
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+</div>
+
+</body>
+</html>
