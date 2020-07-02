@@ -217,36 +217,8 @@ text-shadow: 0px 0px 3px #fff;
   background-color: white;
 }
 
-.h501st{
+.helmetmakingprocess{
   background-image: url(../projects/media/helmet2.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.kenobi{
-  background-image: url(../projects/media/kenobi.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.tiefighter{
-  background-image: url(../projects/media/tiefighter.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.flashemblem{
-  background-image: url(../projects/media/flash.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.bd1{
-  background-image: url(../projects/media/bd1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
