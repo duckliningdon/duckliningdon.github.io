@@ -39,7 +39,7 @@
 
     <div class="infobox">
      <div class="infoboxtext">
-       <div id="sstdemo" style="opacity: 0"><div id=quotes>Here are some of my projects</div></div>
+       <div id="sstdemo" style="opacity: 0"><div id=quotes>Here is a list of my projects</div></div>
       </div>
       <script src="../media/nocursor/typeWriter.js"></script>
       <script>
@@ -51,41 +51,55 @@
         window.onload = textFade;
       </script>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-    </div>
-    <div class="row1">
-     <div class="column">
-       <div class="card">
-         <p>BD-1</p>
-        <div class="progressouter"><div class="progressinner bd-1">20%</div></div>
-       </div>
-     </div>
-     <div class="column" href="projects/501st_helmet.html">
-       <div class="card">
-         <img class="projectimage" src="media/helmet2.jpg"></img>
-         <p>Star Wars 501st Legion Helmet</p>
-       </div>
-     </div>
-     <div class="column">
-       <div class="card">
-         <p>ROTS Kenobi Lightsaber</p>
-       </div>
-     </div>
-     <div class="column">
-       <div class="card">
-         <img class="projectimage" src="media/tiefighter.jpg"></img>
-         <p>Tie Fighter</p>
-       </div>
-     </div>
-   </div>
+    <div class="projectlist">
+      <div class="tab">
+        <div class="h501st"><button class="tablinks" onclick="openCity(event, '1')" id="defaultOpen"></button></div>
+        <div class="kenobi"><button class="tablinks" onclick="openCity(event, '2')"></button></div>
+        <div class="tiefighter"><button class="tablinks" onclick="openCity(event, '3')"></button></div>
+        <div class="flashemblem"><button class="tablinks" onclick="openCity(event, '4')"></button></div>
+        <div class="bd1"><button class="tablinks" onclick="openCity(event, '5')"></button></div>
+      </div>
+      <div id="1" class="tabcontent">
+        <h3>Star Wars 501st Helmet</h3>
+        <p>Stub</p>
+      </div>
+      <div id="2" class="tabcontent">
+        <h3>ROTS Obi-Wan Kenobi Lightsaber</h3>
+        <p>Stub</p>
+      </div>
+      <div id="3" class="tabcontent">
+        <h3>Tie Fighter</h3>
+        <p>Stub</p>
+      </div>
+      <div id="4" class="tabcontent">
+        <h3>The Flash Magnetic Emblem</h3>
+        <p>Stub</p>
+      </div>
+      <div id="5" class="tabcontent">
+        <h3>BD-1</h3>
+        <p>Stub</p>
+      </div>
 
-   <div class="row2">
-     <div class="column">
-       <div class="card">
-         <p>Flash Emblem</p>
-         <div class="progressouter"><div class="progressinner flashemblem">80%</div></div>
-       </div>
-     </div>
-   </div>
+      <script>
+        function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+      </div>
+    </div>
   </div>
 <!--- Footer --->
   <div class="footer">
