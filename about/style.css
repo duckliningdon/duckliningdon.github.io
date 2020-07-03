@@ -88,7 +88,7 @@ text-decoration: none;
 color: #fff;
 }
 
-li{list-style: none;float: left;margin-left: 10px;padding-top: 13px;}
+li{list-style: none;float: left;margin-left: 15px;padding-top: 13px;}
 
 .nav{
 float: right;
@@ -197,6 +197,8 @@ ul#horizontal{
   ul#horizontal li{
     display: inline;
     float: none !important;
+    margin-left: 10px !important;
+    margin-top: 30px !important;
   }
   ul#horizontal li::before{
     content: "\2022" !important;
