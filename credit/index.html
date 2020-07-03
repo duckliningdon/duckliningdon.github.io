@@ -39,14 +39,37 @@
 
     <div class="infobox">
      <div class="infoboxtext">
-       <div width="50%">Credit</div>
+       <div id="sstdemo" style="opacity: 0"><div id=quotes>Credit</div></div>
       </div>
     </div>
+    <script src="../media/nocursor/typeWriter.js"></script>
+    <script>
+      function textFade(){
+        $("#sstdemo").animate({'opacity':'1'},1500);
+      }
+
+      window.onload = typeWriter("#sstdemo","true",60);
+      window.onload = textFade;
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+        <div class="infobody">
+         <div class="infoboxtextheader">Where things came from</div>
+           <div class="infobodytext">
+            <p>Obviously, I didn't make the Iron Man films. For the home page (and 404 page), I got the mp4 file from <a style="color: black; font-weight: bold; text-decoration: underline;" href="https://www.youtube.com/watch?v=4LIIhSHgjTw" target="_blank">this video</a> and then added transitions to make it flow nicely with the home page.</p>
+            <p>Therefore... All rights belong to Marvel Studios and Fairview Entertainment.</p>
+            <p>Now, for the rest of the pages I used an image from photographer <a style="color: black; font-weight: bold; text-decoration: underline;" href="https://unsplash.com/@tixtaaz" target="_blank">Thomas Tixtaaz</a> from one of his pictures on <a style="color: black; font-weight: bold; text-decoration: underline;" href="https://unsplash.com/photos/rdwkamJlpiU" target="_blank">Unsplash</a>.
+            <p></p>
+            <a href="https://unsplash.com/photos/rdwkamJlpiU"><img style="width: 100%; max-width: 20vw; height: 100%; max-height:25vh;" src="../media/bg.jpg"/></a>
+            <p>The rest of the code has snippets from a bunch of places such as <a style="color: black; font-weight: bold; text-decoration: underline;" href="https://www.w3schools.com" target="_blank">W3Schools</a> and from other people asking questions I had. The typewriting effect is TyperWriter.JS, however I don't know where from... (I got it a while back and none of the ones I looked up look like the code I'm using.)</p>
+           </div>
+        </div>
+      </div>
 
   </div>
 <!--- Footer --->
   <div class="footer">
-    <div class="devtext">developed by <a href="about">me</a></div>
+    <div class="devtext"><a href="about">developed by me with bits and pieces from others</a></div>
     <div class="footertext">photo by thomas tixtaaz</div>
   </div>
 

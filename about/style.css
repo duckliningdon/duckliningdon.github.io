@@ -88,12 +88,7 @@ text-decoration: none;
 color: #fff;
 }
 
-li{
-list-style: none;
-float: left;
-margin-left: 15px;
-padding-top: 13px;
-}
+li{list-style: none;float: left;margin-left: 10px;padding-top: 13px;}
 
 .nav{
 float: right;
@@ -183,6 +178,71 @@ text-shadow: 0px 0px 3px #fff;
     left: 0%;
     top: 25%;
     background-color: #fff;
+}
+
+.contact{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+ul#horizontal{
+  list-style: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  right: 20px;
+  }
+  ul#horizontal li{
+    display: inline;
+    float: none !important;
+  }
+  ul#horizontal li::before{
+    content: "\2022" !important;
+    color: black !important;
+    font-weight: bold !important;
+    display: inline-block !important;
+    width: 1em !important;
+    margin-left: -1em !important;
+}
+
+.discord{
+  border-bottom: 1px dotted black;
+  cursor: pointer;
+}
+
+.discord .discordtooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.discord .discordtooltip::after {
+  content: "";
+  position: absolute;
+  top: -32%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #555 transparent;
+}
+
+.discord:hover .discordtooltip {
+  visibility: visible;
+  opacity: 1;
 }
 
 .footer{

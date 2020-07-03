@@ -124,12 +124,14 @@ padding-top: 13px;
 }
 
 .welcometextcontent{
-  margin: 0 auto;
   position: relative;
   top: 20%;
   letter-spacing: 10px;
   width: 100%;
   height: 25%;
+  margin: auto;
+  left: 0;
+  right: 0;
 }
 
 .welcometextheader{
@@ -223,10 +225,9 @@ padding-top: 13px;
     background-size: contain;
     background-position: center;
     height: 1200px;
-    position: relative;
+    position: absolute;
     width: 100%;
-    left: 0%;
-    top: 26%;
+    top: 53%;
     background-color: #fff;
 }
 
@@ -244,15 +245,14 @@ padding-top: 13px;
 }
 
 .footer{
-  position: relative;
+  position: absolute;
   height: 100px;
   width: 100%;
   margin: auto;
   background-color: black;
   z-index: 1;
   box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
-  left: 0%;
-  top: 22%;
+  top: 117%;
 }
 
 .devtext{
@@ -277,6 +277,23 @@ padding-top: 13px;
   text-shadow: 0px 0px 3px #fff;
   width: 185px;
 }
+
+/* Effects */
+
+.fade_effect_about{
+  opacity: 0;
+}
+
+.fade_effect_projects{
+  opacity: 0;
+}
+
+.fade_effect_left_blog{
+  opacity: 0;
+  margin-left:-300px;
+	max-width:100%;
+}
+
 /*
 make keyframes that tell the start state and the end state of our object
 */
@@ -304,12 +321,16 @@ make keyframes that tell the start state and the end state of our object
 
 .bloggggg{
   z-index: 500;
-  position: relative;
-  top: 22%;
+  position: absolute;
+  top: 23%;
+  left: 0;
+  right: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
-* {
+m {
 }
 
 .blog-slider {
@@ -646,7 +667,7 @@ make keyframes that tell the start state and the end state of our object
   /** Alternative Syntax **/
   /* grid-column: 1 / span 2;  */
   /* grid-row: 1 / span 2; */
-  box-shadow: 4px 3px 8px 1px #969696;
+  box-shadow: 4px 3px 8px 1px #969696, inset 0 0 50px black;
   display: block;
   background: url(../projects/media/flash.jpg);
   background-repeat: no-repeat;
@@ -676,7 +697,7 @@ make keyframes that tell the start state and the end state of our object
   /** Alternative Syntax **/
   /* grid-column: 3 / span 2;  */
   /* grid-row: 1 / span 2; */
-  box-shadow: 4px 3px 8px 1px #969696;
+  box-shadow: 4px 3px 8px 1px #969696, inset 0 0 50px black;
   display: block;
   background: url(../projects/media/tiefighter.jpg);
   background-repeat: no-repeat;
@@ -710,7 +731,7 @@ make keyframes that tell the start state and the end state of our object
   /** Alternative Syntax **/
   /* grid-column: 5 / span 4;
   grid-row: 1 / span 5; */
-  box-shadow: 4px 3px 8px 1px #969696;
+  box-shadow: 4px 3px 8px 1px #969696, inset 0 0 50px black;
   display: block;
   background: url(../projects/media/helmet2.jpg);
   background-repeat: no-repeat;
@@ -744,7 +765,7 @@ make keyframes that tell the start state and the end state of our object
   /** Alternative Syntax **/
   /* grid-column: 1 / span 4;  */
   /* grid-row: 3 / span 3; */
-  box-shadow: 4px 3px 8px 1px #969696;
+  box-shadow: 4px 3px 8px 1px #969696, inset 0 0 50px black;
   display: block;
   background: url(../projects/media/toygun.jpg);
   background-repeat: no-repeat;
@@ -778,7 +799,7 @@ make keyframes that tell the start state and the end state of our object
   /** Alternative Syntax **/
   /* grid-column: 1 / span 4; */
   /* grid-row: 6 / span 3; */
-  box-shadow: 4px 3px 8px 1px #969696;
+  box-shadow: 4px 3px 8px 1px #969696, inset 0 0 50px black;
   display: block;
   background: url(../projects/media/bd1.jpg);
   background-repeat: no-repeat;
@@ -812,7 +833,7 @@ make keyframes that tell the start state and the end state of our object
   /** Alternative Syntax **/
   /* grid-column: 5 / span 4; */
   /* grid-row: 6 / span 3; */
-  box-shadow: 4px 3px 8px 1px #969696;
+  box-shadow: 4px 3px 8px 1px #969696, inset 0 0 50px black;
   display: block;
   background: url(../projects/media/kenobi.jpg);
   background-repeat: no-repeat;

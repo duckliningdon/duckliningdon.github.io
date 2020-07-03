@@ -1,8 +1,7 @@
 @ -1,902 +0,0 @@
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
-/* page format */
+
 html {
-  --sunglassoffset: -25px;
   min-height: 100%;
 }
 
@@ -34,20 +33,8 @@ body{
   background-color: #000;
   top: 0px;
   position: fixed;
-  opacity: .8;
   overflow-y: hidden;
   box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
-  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
-
-  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
-
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  animation-duration:1s;
 }
 
 .logo {
@@ -118,28 +105,27 @@ text-shadow: 0px 0px 3px #fff;
 }
 
 .cent{
-  position: absolute;
-  top: 2%;
+  position: relative;
+  top: -100%;
   left: 0px;
-  height: 72vw;
+  height: 100vh;
   width: 100%;
   margin: -25px auto;
-  z-index: 1;
-  opacity: 1;
-}
-
-.cent::before{
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  z-index: -10000;
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
 }
 
 .infoboxtext{
   color: black;
-  font-size: 3vw;
+  font-size: 3.5em;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   text-shadow: 0px 0px 1px #fff;
@@ -155,12 +141,13 @@ text-shadow: 0px 0px 3px #fff;
     background-position: center;
     background-color: #f1f1f1;
     border-radius: 1%;
-    height: 4vw;
-    margin: 1rem;
-    position: relative;
+    height: 8%;
+    position: absolute;
     width: 50%;
-    left: 25%;
-    top: 8%;
+    top: 14%;
+    margin: auto;
+    left: 0;
+    right: 0;
 }
 
 * {box-sizing: border-box}
@@ -169,7 +156,7 @@ text-shadow: 0px 0px 3px #fff;
   position: absolute;
   left: -50%;
   width: 200%;
-  top: 150%;
+  top: 130%;
   height: 100%;
 }
 
@@ -178,7 +165,7 @@ text-shadow: 0px 0px 3px #fff;
   float: left;
   background-color: #f1f1f1;
   width: 20%;
-  height: 57vw;
+  height: 77vh;
   border: 1px solid #cccccc;
 }
 
@@ -217,9 +204,9 @@ text-shadow: 0px 0px 3px #fff;
   padding: 0px 12px;
   border: 1px solid #cccccc;
   width: 77vw;
-  height: 57vw;
+  height: 77vh;
   background-color: white;
-  line-height: 0.5;
+  overflow-y: scroll;
 }
 
 .h501st{
@@ -227,6 +214,7 @@ text-shadow: 0px 0px 3px #fff;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: inset 0 0 50px black;
 }
 
 .kenobi{
@@ -234,6 +222,7 @@ text-shadow: 0px 0px 3px #fff;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: inset 0 0 50px black;
 }
 
 .tiefighter{
@@ -241,6 +230,7 @@ text-shadow: 0px 0px 3px #fff;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: inset 0 0 50px black;
 }
 
 .flashemblem{
@@ -248,6 +238,7 @@ text-shadow: 0px 0px 3px #fff;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: inset 0 0 50px black;
 }
 
 .bd1{
@@ -255,6 +246,7 @@ text-shadow: 0px 0px 3px #fff;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: inset 0 0 50px black;
 }
 
 .footer{
@@ -265,7 +257,7 @@ text-shadow: 0px 0px 3px #fff;
   background-color: black;
   z-index: -5000;
   box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
-  bottom: -25vw;
+  bottom: -6vw;
 }
 
 .devtext{
@@ -274,7 +266,7 @@ text-shadow: 0px 0px 3px #fff;
   margin-right: auto;
   position: relative;
   color: white;
-  top: 45%;
+  top: 35%;
   font-family: 'Raleway', sans-serif;
   text-shadow: 0px 0px 3px #fff;
   width: 202px;
@@ -286,10 +278,11 @@ text-shadow: 0px 0px 3px #fff;
   margin-right: 10%;
   position: relative;
   color: white;
-  top: 26.5%;
   font-family: 'Raleway', sans-serif;
   text-shadow: 0px 0px 3px #fff;
   width: 185px;
+  top: 5%;
+  bottom: 0;
 }
 
 /*

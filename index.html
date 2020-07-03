@@ -74,13 +74,16 @@
 <!--- Center --->
   <div class="cent">
 <!--- Info Box --->
+<div class="fade_effect_about">
   <div class="infobox">
      <div class="infoboxtext">
        <div>About Me</div>
      </div>
-         <div class="infobody">Hello there, my name is Sam and I am a student, future engineer, and prop making/electrical hobbist based in the United States. Most of my projects are based on my favorite movies/TV shows such as Star Wars or the Arrowverse, video games such as Halo, or even celebrity figures such as Daft Punk. My favorite things to do are exercise, play video games, and hang with the boys. If you want to connect with me please do so <a style="color: grey;" href="about">here</a>.</div>
+         <div class="infobody">Hello there, my name is Sam and I am a student, future engineer, and prop making/electrical hobbist based in the United States. Most of my projects are based on my favorite movies/TV shows such as Star Wars or the Arrowverse, video games such as Halo, or even celebrity figures such as Daft Punk. My favorite things to do are exercise, play video games, and hang with the boys. If you want to connect with me please do so <a style="color: black; font-weight: bold; text-decoration: underline;" href="about">here</a>.</div>
     </div>
-    <!-- Blog slider -->
+</div>
+<!-- Blog slider -->
+<div class="fade_effect_left_blog">
     <div class="bloggggg">
       <div class="blog-slider">
         <div class="blog-slider__wrp swiper-wrapper">
@@ -128,8 +131,9 @@
       <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
       <script  src="home/index.js"></script>
     </div>
-
+</div>
 <!--- Project Box --->
+<div class="fade_effect_projects">
   <div class="projectbox">
      <div class="projectboxtext">
        <div>Here is a preview of my favorite projects</div>
@@ -181,14 +185,69 @@
         </div>
       </div>
     </div>
-
+</div>
+<!--- Footer --->
     <div class="footer">
       <div class="devtext"><a href="about">developed by me with bits and pieces from others</a></div>
       <div class="footertext"><a href="credit">Iron Man 2 Intro rights belong to Marvel Studios</a></div>
     </div>
 
+<!--- Scripts --->
+<!--- Fade In About --->
+<script>
+  $(document).ready(function() {
+  $(window).scroll( function(){
+  $('.fade_effect_about').each( function(i){
+
+  var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+  var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+  if( bottom_of_window > bottom_of_element ){
+  $(this).animate({'opacity':'1'},1000);
+  }
+
+  });
+  });
+  });
+</script>
+<!--- Fade In from the side for Blog --->
+<script>
+  $(document).ready(function() {
+  $(window).scroll( function(){
+  $('.fade_effect_left_blog').each( function(i){
+
+  var bottom_of_element = $(this).offset().top;
+  var bottom_of_window = $(window).scrollTop() + ($(window).height() / 2);
+
+  if( bottom_of_window > bottom_of_element ){
+  $(this).animate({'opacity':'1','margin-left':'0px'},1000);
+  }
+
+  });
+  });
+  });
+</script>
+
+<!--- Fade Effect for Projects --->
+<script>
+  $(document).ready(function() {
+  $(window).scroll( function(){
+  $('.fade_effect_projects').each( function(i){
+
+  var bottom_of_element = $(this).offset().top;
+  var bottom_of_window = $(window).scrollTop() + ($(window).height() / 20);
+
+  if( bottom_of_window > bottom_of_element ){
+  $(this).animate({'opacity':'1'},1000);
+  }
+
+  });
+  });
+  });
+</script>
+
   </div>
-<!--- Footer --->
+
 
 
 </body>

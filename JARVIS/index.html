@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>JARVIS | Swedberg Industries</title>
+    <title>J.A.R.V.I.S. | Swedberg Industries</title>
     <meta name="description" content="Swedberg Industries is a personal webstie for a future engineer and prop making/eletrical hobbist."/>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="../media/dv.ico">
@@ -39,14 +39,34 @@
 
     <div class="infobox">
      <div class="infoboxtext">
-       <div width="50%">JARVIS</div>
+       <div id="sstdemo" style="opacity: 0"><div id=quotes>J.A.R.V.I.S.</div></div>
       </div>
     </div>
+    <script src="../media/nocursor/typeWriter.js"></script>
+    <script>
+      function textFade(){
+        $("#sstdemo").animate({'opacity':'1'},1500);
+      }
+
+      window.onload = typeWriter("#sstdemo","true",60);
+      window.onload = textFade;
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+        <div class="infobody">
+         <div class="infoboxtextheader">Just A Rather Very Intelligent System</div>
+           <div class="infobodytext">J.A.R.V.I.S. is a multi-functional software program capable of managing the local environment of Tony Stark's mansion interior. It employs a highly advanced user interface with holographic peripherals and voice input, and communicates data back to its user via speech audio, holographic displays and conventional LCD monitors. It also controls a number of robotic appliances, most notably an armory unit concealed in the floor of Stark's home that facilitates entry and egress of most of the Iron Man armor's.
+
+J.A.R.V.I.S. has also been adapted to be loaded into the Iron Man armor for use as a system control program. In this capacity it governs the complex computational requirements needed to interface the wearer of the armor with the various subsystems, as well as provide life support control.
+
+Like Ultron, J.A.R.V.I.S. is capable of escaping into the Internet in an emergency as he did in Avengers: Age of Ultron. To survive, J.A.R.V.I.S. was stated to have scattered himself and dumped his memory, leaving J.A.R.V.I.S. unaware that he was even in the Internet until Tony found him and put J.A.R.V.I.S. back together again. As J.A.R.V.I.S. did not dump his security protocols, in this state he was capable of foiling Ultron's attempts to hack nuclear launch codes.</div>
+        </div>
+      </div>
 
   </div>
 <!--- Footer --->
   <div class="footer">
-    <div class="devtext">developed by <a href="about">me</a></div>
+    <div class="devtext"><a href="about">developed by me with bits and pieces from others</a></div>
     <div class="footertext">photo by thomas tixtaaz</div>
   </div>
 
