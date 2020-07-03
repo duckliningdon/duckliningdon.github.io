@@ -1,4 +1,4 @@
-ErrorDocument 404 /404/
+ErrorDocument 404 /404/index.html
 
 # mod_rewrite starts here
 
