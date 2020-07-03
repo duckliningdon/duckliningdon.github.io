@@ -1,9 +1,14 @@
 @ -1,902 +0,0 @@
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 /* page format */
+
+html{
+  font-family: 'Raleway'; sans-serif;
+}
+
 body{
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Raleway'; sans-serif;
   z-index: 100;
   overflow-x: hidden;
   margin: 0;
@@ -173,7 +178,7 @@ padding-top: 13px;
   color: black;
   font-size: 36px;
   text-align: center;
-  font-family: 'Open sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-shadow: 0px 0px 1px #fff;
   margin: 0px auto;
   position: relative;
@@ -198,7 +203,7 @@ padding-top: 13px;
   color: black;
   font-size: 16px;
   text-align: center;
-  font-family: 'Open sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-shadow: 0px 0px 1px #fff;
   margin: 0px auto;
   position: relative;
@@ -211,7 +216,7 @@ padding-top: 13px;
   color: black;
   font-size: 36px;
   text-align: center;
-  font-family: 'Open sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-shadow: 0px 0px 1px #fff;
   margin: 0px auto;
   position: relative;
@@ -235,13 +240,24 @@ padding-top: 13px;
   color: black;
   font-size: 16px;
   text-align: center;
-  font-family: 'Open sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-shadow: 0px 0px 1px #fff;
   margin: 0px auto;
   position: relative;
-  top: 10%;
+  top: 7%;
   width: 100%;
   line-height: 1.5;
+  font-weight: bolder;
+}
+
+.projectredirect{
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 0px 0px 1px #fff;
+  position: relative;
+  top: 4vh;
 }
 
 .footer{
@@ -252,7 +268,7 @@ padding-top: 13px;
   background-color: black;
   z-index: 1;
   box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
-  top: 117%;
+  top: 119%;
 }
 
 .devtext{
@@ -783,7 +799,6 @@ m {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  font-style: 'Open sans', sans-serif;
 }
 
 .gallery__item--4:hover .overlay {
