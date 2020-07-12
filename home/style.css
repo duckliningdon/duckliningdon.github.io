@@ -31,6 +31,7 @@ body{
   opacity: 0.9;
   height: 50%;
 }
+
 .header{
   overflow-x: hidden;
   z-index: 10000;
@@ -346,8 +347,6 @@ make keyframes that tell the start state and the end state of our object
 }
 
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
-m {
-}
 
 .blog-slider {
   width: 95%;
@@ -610,6 +609,7 @@ m {
 	margin: 0 auto;
 	left: 50%;
 }
+
 .icon-scroll span {
 	display: block;
 	width: 5px;
