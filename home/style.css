@@ -749,7 +749,7 @@ make keyframes that tell the start state and the end state of our object
   grid-row: 1 / span 5; */
   box-shadow: 4px 3px 8px 1px #969696, inset 0 0 50px black;
   display: block;
-  background: url(../projects/media/helmet2.jpg);
+  background: url(blog/helmet2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
