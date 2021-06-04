@@ -26,7 +26,7 @@ html, body, *{
   width: 85%;
   margin: 0 auto;
   z-index: 100;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .header{
   overflow-x: hidden;
@@ -73,7 +73,7 @@ padding-top: 13px;
 .nav {
   float: right;
   font-family: 'Raleway', sans-serif;
-  margin-top: -22px;
+  margin-right: 5%;
 }
 
 .navunderline{
