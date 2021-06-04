@@ -19,33 +19,43 @@ body{
   overflow-x: hidden;
   margin: 0;
 }
+
 /* nav bar */
 .container{
   width: 85%;
-  margin: 0 auto;
+  margin: 25px auto;
   z-index: 100;
   overflow-x: hidden;
+  opacity: 0.9;
+  height: 50%;
 }
+
 .header{
   overflow-x: hidden;
   z-index: 10000;
-  width: 105%;
+  width: 100%;
   height: 80px;
-  background-color: #000;
   top: 0px;
-  position: fixed;
+  position: absolute;
   overflow-y: hidden;
-  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+  background-color: #000;
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
 }
 
 .logo {
-  animation: logo-entry 4s ease-in;
-  width: 400px;
-  margin: 0 auto;
+  margin: 0px auto;
+  float: left;
   position: absolute;
-  top: 30%;
-  height: 100%;
 }
+
 
 .swedbergindustries {
   animation: text-glow 2s ease-out infinite alternate;
@@ -88,12 +98,7 @@ text-decoration: none;
 color: #fff;
 }
 
-li{
-list-style: none;
-float: left;
-margin-left: 15px;
-padding-top: 13px;
-}
+li{list-style: none;float: left;margin-left: 15px;padding-top: 13px;}
 
 .nav{
 float: right;
@@ -183,6 +188,73 @@ text-shadow: 0px 0px 3px #fff;
     left: 0%;
     top: 25%;
     background-color: #fff;
+}
+
+.contact{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+ul#horizontal{
+  list-style: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  right: 20px;
+  }
+  ul#horizontal li{
+    display: inline;
+    float: none !important;
+    margin-left: 10px !important;
+    margin-top: 30px !important;
+  }
+  ul#horizontal li::before{
+    content: "\2022" !important;
+    color: black !important;
+    font-weight: bold !important;
+    display: inline-block !important;
+    width: 1em !important;
+    margin-left: -1em !important;
+}
+
+.discord{
+  border-bottom: 1px dotted black;
+  cursor: pointer;
+}
+
+.discord .discordtooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.discord .discordtooltip::after {
+  content: "";
+  position: absolute;
+  top: -32%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #555 transparent;
+}
+
+.discord:hover .discordtooltip {
+  visibility: visible;
+  opacity: 1;
 }
 
 .footer{

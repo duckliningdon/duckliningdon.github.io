@@ -1,6 +1,6 @@
 @ -1,902 +0,0 @@
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
-/* page format */
+
 html {
   min-height: 100%;
 }
@@ -206,32 +206,128 @@ text-shadow: 0px 0px 3px #fff;
   width: 77vw;
   height: 77vh;
   background-color: white;
-  overflow-y: scroll
+  overflow-y: scroll;
 }
 
-.specifications{
-  background-image: url(media/ender3pro.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: 45%;
-  box-shadow: inset 0 0 50px black;
-}
-
-.helmetmakingprocess{
-  background-image: url(../projects/media/helmet2.jpg);
+.h501st{
+  background-image: url(media/helmet2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   box-shadow: inset 0 0 50px black;
 }
 
-.arcreactor{
-  background-image: url(../projects/media/arcreactor.jpg);
+.kenobi{
+  background-image: url(media/kenobi.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   box-shadow: inset 0 0 50px black;
 }
+
+.tiefighter{
+  background-image: url(media/tiefighter.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 50px black;
+}
+
+.flashemblem{
+  background-image: url(media/flash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 50px black;
+}
+
+.bd1{
+  background-image: url(media/bd1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 50px black;
+}
+
+.toygun{
+  background-image: url(media/toygun.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 50px black;
+}
+
+.darthvader{
+  background-image: url(media/darthvader.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 50px black;
+}
+
+.esword{
+  background-image: url(media/esword.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 50px black;
+}
+
+.masterchief{
+  background-image: url(media/masterchief.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 50px black;
+}
+
+.daftpunk{
+  background-image: url(media/daftpunk.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 50px black;
+}
+
+
+.progressbackground {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.progress{
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  color: white;
+}
+
+.progress-bd1{
+  width: 75%;
+  background-color: #808080;
+}
+
+.progress-toygun{
+  width: 85%;
+  background-color: #808080;
+}
+
+.progress-esword{
+  width: 55%;
+  background-color: #808080;
+}
+
+.progress-masterchief{
+  width: 65%;
+  background-color: #808080;
+}
+
+.progress-daftpunk{
+  width: 1%;
+  background-color: #808080;
+}
+
 
 .footer{
   position: absolute;

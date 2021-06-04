@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Home | Swedberg Industries</title>
+    <title>Home | Samuel James</title>
     <meta name="description" content="Swedberg Industries is a personal webstie for a future engineer and prop making/electrical hobbist."/>
     <link rel="stylesheet" href="home/style.css">
     <link rel="shortcut icon" href="media/dv.ico">
@@ -23,33 +23,38 @@
   <div style="z-index: 10000" class="header">
     <div class="container">
       <div class="logo">
-        <a href="https://swedbergindustries.tk"><div class="swedbergindustries">SWEDBERG INDUSTRIES</div></a>
+        <a href="https://samueljames.com"><div class="swedberg">SAMUEL JAMES</div></a>
       </div>
       <div class="nav">
         <ul>
           <li><a class="navunderline" href="projects">PROJECTS</a></li>
-          <li><a class="navunderline" href="series">SERIES</a></li>
-          <li><a class="navunderline" href="references">REFERENCES</a></li>
           <li><a class="navunderline" href="about">ABOUT</a></li>
+          <li><a class="navunderline" href="contact">CONTACT</a></li>
         </ul>
       </div>
     </div>
   </div>
 
-
+<!-- Background Video -->
   <div class="fullscreen-bg">
       <video loop muted autoplay poster="img/videoframe.jpg">
           <source src="media/ironman2.mp4" type="video/mp4">>
       </video>
   </div>
-<!--- Welcome Text --->
-  <div class="welcomeslider">
-    <div class="welcometextcontent">
-      <div id="sstdemo" style="opacity: 0" onload="document.getElementById(test).style.opacity='1'">
-        <span class="welcometextheader">Welcome Home, Sir.</span>
-        <div class="welcometextbody">
-          <div id="quote"></div>
-        </div>
+
+<div class="content">
+
+<!--- Welcome Box --->
+  <div class="welcome_container">
+    <div class="welcome_content">
+      <div id="sstdemo" style="opacity: 1" onload="document.getElementById(test).style.opacity='1'">
+        <span class="welcome_textheader">Hello there!</span>
+          <div class="welcome_textbody">
+            <div>My name is Samuel James (Swedberg).</div>
+            <div>I'm a freshman at North Dakota State University</div>
+            <div>currently studying electrical engineering.</div>
+          </div>
+      <div class="moreinfo">MORE INFO BELOW</div>
       <div class="icon-scroll">
         <div>
           <span class="z1"></span>
@@ -72,176 +77,74 @@
     window.onload = textFade;
   </script>
   </div>
-<!--- Center --->
-  <div class="cent">
-<!--- Info Box --->
-<div class="fade_effect_about">
-  <div class="infobox">
-     <div class="infoboxtext">
-       <div>About Me</div>
-     </div>
-         <div class="infobody">Hello there, my name is Sam and I am a student, future eletrical engineer, and prop making/electrical hobbist based in the United States. Most of my projects are based on my favorite movies/TV shows such as Star Wars or the Arrowverse, video games such as Halo, or even celebrity figures such as Daft Punk. My favorite things to do are exercise, play video games, and hang with the boys. If you want to connect with me please do so <a style="color: black; font-weight: bold; text-decoration: underline;" href="about">here</a>.</div>
-    </div>
-</div>
-<!-- Blog slider -->
-<div class="fade_effect_left_blog">
-    <div class="bloggggg">
-      <div class="blog-slider">
-        <div class="blog-slider__wrp swiper-wrapper">
-          <div class="blog-slider__item swiper-slide">
-            <div class="blog-slider__img">
-              <img src="media/swedbergindustries.png" alt="">
-            </div>
-            <div class="blog-slider__content">
-              <span class="blog-slider__code"></span>
-              <div class="blog-slider__title">Swedberg Industries - Go check out my YouTube!</div>
-              <div class="blog-slider__text">I post tutorials and things about my projects. Shorter videos and comedy videos can be found on my TikTok as well!</div>
-              <a href="projects" class="blog-slider__button">YOUTUBE</a>
-              <a href="projects" class="blog-slider__button">TIKTOK</a>
-            </div>
-          </div>
 
-        <div class="blog-slider__item swiper-slide">
-          <div class="blog-slider__img">
-            <img src="home/blog/vader.jpg" alt="">
-          </div>
-          <div class="blog-slider__content">
-            <span class="blog-slider__code">August 7, 2020</span>
-            <div class="blog-slider__title">Latest Project - Darth Vader Helmet</div>
-            <div class="blog-slider__text">I find your lack of faith... disturbing.</div>
-            <a href="projects" class="blog-slider__button">SEE MORE PROJECTS</a>
-          </div>
-        </div>
-
-        <div class="blog-slider__item swiper-slide">
-          <div class="blog-slider__img">
-            <img src="https://i.imgur.com/17wcEXW.jpg" alt="">
-          </div>
-          <div class="blog-slider__content">
-            <span class="blog-slider__code">July 28, 2017</span>
-            <div class="blog-slider__title">The Emoji Movie</div>
-            <div class="blog-slider__text">the world we live in. it's so... wonderous. mysterious. even magical. no... no no no.. not that world. i meant this one. the smartphone. each system and program app is it's own little planet of perfect. technology..</div>
-            <a href="https://www.reddit.com/r/copypasta/comments/6ru5k8/emoji_movie_script/" class="blog-slider__button">DIVE IN</a>
-          </div>
-        </div>
-
-      </div>
-        <div class="blog-slider__pagination"></div>
-      </div>
-
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
-      <script  src="home/index.js"></script>
-    </div>
-</div>
-<!--- Project Box --->
-<div class="fade_effect_projects">
-  <div class="projectbox">
-     <div class="projectboxtext">
-       <div>Here is a preview of my favorite projects</div>
-     </div>
-     <div class="projectbody">
-       <div class="gallery">
-          <figure class="gallery__item gallery__item--1">
-              <div class="overlay">
-                <div class="gallery__text--1">ROTS Kenobi Lightsaber</div>
-              </div>
-          </figure>
-          <figure class="gallery__item gallery__item--2">
-              <div class="overlay">
-                <div class="gallery__text--2">BD-1</div>
-              </div>
-          </figure>
-          <figure class="gallery__item gallery__item--3">
-              <div class="overlay">
-                <div class="gallery__text--3">Star Wars 501st Helmet</div>
-              </div>
-          </figure>
-          <figure class="gallery__item gallery__item--4">
-              <div class="overlay">
-                <div class="gallery__text--4">Arc Reactor</div>
-              </div>
-          </figure>
-          <figure class="gallery__item gallery__item--5">
-              <div class="overlay">
-                <div class="gallery__text--5">Iron Man MK3 Helmet</div>
-              </div>
-          </figure>
-          <figure class="gallery__item gallery__item--6">
-              <div class="overlay">
-                <div class="gallery__text--6">Darth Vader Helmet</div>
-              </div>
-          </figure>
-        </div>
-        <div class="projectredirect">
-          <a style="color: black; text-decoration: underline;" href="projects">Click here to see a list of all my projects.</a>
+<!--- Projects & Hobbies -->
+<div class="container_l">
+  <div class="textcontainer_l">
+    <div class="textheader_l">Projects</div>
+      <div class="textbody_l">
+        <div style="margin-bottom: 5%">
+          <p>From a young age, I had an interest of putting things together and working with my hands. I am constantly working on new projects whether it is 3D printing or developing a new program.</p>
+          <p>Currently, I am selling some of my 3D prints on Etsy. Feel free to check a few of them out.</p>
         </div>
       </div>
+      <div class="button_container">
+        <a class="content_button" href="https://etsy.com">Etsy Store</a>
+        <a class="content_button" href="projects">View Projects</a>
+      </div>
+  </div>
+  <div class="container_r">
+    <div class="imagecontainer_r">
+      <img src="home/blog/helmet2.jpg" class="image">
     </div>
+  </div>
 </div>
-<!--- Footer --->
-    <div class="footer">
-      <div class="devtext"><a href="about">developed by me with bits and pieces from others</a></div>
-      <div class="footertext"><a href="credit">Iron Man 2 Intro rights belong to Marvel Studios</a></div>
+
+  <!--- Interests -->
+  <div class="container_l">
+    <div class="textcontainer_l">
+      <img src="home/blog/helmet2.jpg" class="image">
     </div>
-
-<!--- Scripts --->
-<!--- Fade In About --->
-<script>
-  $(document).ready(function() {
-  $(window).scroll( function(){
-  $('.fade_effect_about').each( function(i){
-
-  var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-  var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-  if( bottom_of_window > bottom_of_element ){
-  $(this).animate({'opacity':'1'},1000);
-  }
-
-  });
-  });
-  });
-</script>
-<!--- Fade In from the side for Blog --->
-<script>
-  $(document).ready(function() {
-  $(window).scroll( function(){
-  $('.fade_effect_left_blog').each( function(i){
-
-  var bottom_of_element = $(this).offset().top;
-  var bottom_of_window = $(window).scrollTop() + ($(window).height() / 2);
-
-  if( bottom_of_window > bottom_of_element ){
-  $(this).animate({'opacity':'1','margin-left':'0px'},1000);
-  }
-
-  });
-  });
-  });
-</script>
-
-<!--- Fade Effect for Projects --->
-<script>
-  $(document).ready(function() {
-  $(window).scroll( function(){
-  $('.fade_effect_projects').each( function(i){
-
-  var bottom_of_element = $(this).offset().top;
-  var bottom_of_window = $(window).scrollTop() + ($(window).height() / 20);
-
-  if( bottom_of_window > bottom_of_element ){
-  $(this).animate({'opacity':'1'},1000);
-  }
-
-  });
-  });
-  });
-</script>
-
+    <div class="container_r">
+      <div class="textcontainer_r">
+        <div class="textheader_r">Interests</div>
+          <div class="textbody_r">
+            <div style="margin-bottom: 5%">Health and fitness are one of my top passions and priorities in my life.</div>
+            <div>However, when I am looking to rest my body, I love playing video games, my guitar, or go back to working on my projects.</div>
+          </div>
+          <div class="button_container">
+            <a class="content_button" href="now">What I'm Doing Now</a>
+          </div>
+      </div>
+    </div>
   </div>
 
+<!--- Contact Me -->
+  <div class="container_l">
+    <div class="textcontainer_l">
+      <div class="textheader_l">Contact</div>
+        <div class="textbody_l">
+          <div style="margin-bottom: 5%">Feel free to reach out to me about my projects or other opportunities.</div>
+          <div>I will try my hardest to get back to you in a timely manner.</div>
+        </div>
+        <div class="button_container">
+          <a class="content_button" href="contact">Contact Me</a>
+        </div>
+    </div>
+    <div class="container_r">
+      <div class="imagecontainer_r">
+        <img src="home/blog/helmet2.jpg" class="image">
+      </div>
+    </div>
+  </div>
 
+</div>
+
+<!--- Footer --->
+<footer class="footer">
+  <a class="devtext" href="about">© Samuel James 2021</a>
+  <a class="footertext" href="credit">YouTube, Instagram, Etc</a>
+</footer>
 
 </body>
 </html>

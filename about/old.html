@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>About Me | Swedberg Industries</title>
+    <meta name="description" content="Swedberg Industries is a personal webstie for a future engineer and prop making/eletrical hobbist."/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../media/dv.ico">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        </head>
+        <script language="javascript">
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+          location.href = '/mobile.html';}
+        </script>
+
+<body style="z-index: -1; height: 0px;">
+<!--- Nav Bar --->
+  <div style="z-index: 10000" class="header">
+    <div class="container">
+      <div class="logo">
+        <a href="https://swedbergindustries.tk"><div class="swedbergindustries">SWEDBERG INDUSTRIES</div></a>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="../projects">PROJECTS</a></li>
+          <li><a href="../series">SERIES</a></li>
+          <li><a href="../references">REFERENCES</a></li>
+          <li><a href="../about">ABOUT</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<!--- Center --->
+  <div class="cent">
+
+    <div class="infobox">
+     <div class="infoboxtext">
+       <div id="sstdemo" style="opacity: 0"><div id=quotes>About Me</div></div>
+      </div>
+    </div>
+    <script src="../media/nocursor/typeWriter.js"></script>
+    <script>
+      function textFade(){
+        $("#sstdemo").animate({'opacity':'1'},1500);
+      }
+
+      window.onload = typeWriter("#sstdemo","true",60);
+      window.onload = textFade;
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+        <div class="infobody">
+         <div class="infoboxtextheader">I am Iron Man...?</div>
+           <div class="infobodytext">
+             <p>Hello there, my name is Sam and I am a student, future electrical engineer, and maker hobbist based in the United States. Most of my projects are based on my favorite movies/TV shows such as Star Wars or the Arrowverse, video games such as Halo, or even celebrity figures such as Daft Punk. My favorite things to do are exercise, play video games, and hang with the boys.</p>
+             <p>In the coding world, I'm decent at HTML and CSS (I mean, I made this website...), with a slight understanding of JS and Python. You could say I know a thing or too because I've seen a thing or two.</p>
+             <p>During the Coronavirus quarantine, I was browsing Reddit and saw a figurine of Captain Rex and Commander Cody on someone's wall. I thought to myself, "How hard would it be to get/make that?" A couple months later, and lots of time and money spent... I 3D print props and work on basic electronics (such as Arduino). Taking inspiration from a friend, I then made this website to document my progress and failures.</p>
+             <p>Places you can connect with me are...</p>
+                <ul id="horizontal">
+                 <li><a style="color: black; font-weight: bold; text-decoration: underline;" href="https://www.youtube.com/channel/UCfRdAEu1oPE7uNq8Rmg7aFQ" target="_blank">YouTube</a></li>
+                 <li><a style="color: black; font-weight: bold; text-decoration: underline;" href="https://www.tiktok.com/@samswedberg" target="_blank">TikTok</a></li>
+                 <li class="discord" data-clipboard-text="lofi hip hop radio#0189">Discord<span class="discordtooltip" id="tp1">Click to Copy</span></li>
+                 <li><a style="color: black; font-weight: bold; text-decoration: underline;" href="https://www.reddit.com/user/duckliningdon" target="_blank">Reddit</a></li>
+                 <li><a style="color: black; font-weight: bold; text-decoration: underline;" href="mailto:swedbergindustries@gmail.com">Email</a></li>
+                 <li></li>
+                </ul>
+              <p>The fastest way to reach me is probably a Discord DM.</p>
+              <p>If you can't tell, I'm a big fan of movies and TV shows. My all time favorite movie saga is Star Wars, specifically the prequels. I like the Marvel movies, however Star Wars reigns supreme. In the television world, my favorite series is Arrow and Stranger Things. When I'm not watching that type of content, I'm either at my computer gaming or watching YouTube, lifting weights... getting <a style="color: black; font-weight: bold; text-decoration: underline;" href="https://youtu.be/Quf0q3ABb7I?t=38" target="_blank">SWOLE</a>, or spending time with the boys.</p>
+              <!---<img style="width: 100%; max-width: 10vw; height: 100%; max-height:15vh;" src="../media/bg.jpg"/>--->
+           </div>
+        <script src="clipboard.min.js"></script>
+        <script>
+         var clipboard = new ClipboardJS('.discord');
+        </script>
+        <script>
+          $(document).ready(function() {
+          $(".discord").click(function () {
+          if ($("#tp1").text() == "Click to Copy") {
+          $("#tp1").text("Copied!");
+          } else {
+          $("#tp1").text("Click to Copy");
+          }
+          });
+          });
+          </script>
+        </div>
+      </div>
+
+  </div>
+<!--- Footer --->
+  <div class="footer">
+    <div class="devtext"><a href="../about">developed by me with bits and pieces from others</a></div>
+    <div class="footertext"><a href="../credit">photo by thomas tixtaaz</a></div>
+  </div>
+
+</body>
+</html>
