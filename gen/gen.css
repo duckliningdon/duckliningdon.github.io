@@ -61,11 +61,16 @@ text-decoration: none;
 color: #fff;
 }
 
-li{
+li.navlist{
 list-style: none;
 float: left;
 margin-left: 15px;
 padding-top: 13px;
+}
+
+ul.facts{
+  list-style: disc;
+  text-align: left;
 }
 
 .nav {
@@ -133,8 +138,7 @@ padding-top: 13px;
 .textcontainer_c{
   margin: 0px auto;
   position: relative;
-  width: 60vmin;
-  margin-top: auto;
+  width: 100vmin;
   margin-bottom: auto;
 }
 
@@ -190,7 +194,6 @@ padding-top: 13px;
   text-shadow: 0px 0px 1px #fff;
   margin: 0px auto;
   position: relative;
-  width: 60vmin;
   text-align: left;
   margin-top: 2.5%;
 }
@@ -202,7 +205,6 @@ padding-top: 13px;
   text-shadow: 0px 0px 1px #fff;
   margin: 0px auto;
   position: relative;
-  width: 60vmin;
   text-align: center;
   margin-top: 2.5%;
 }
@@ -211,7 +213,6 @@ padding-top: 13px;
   margin: 0px auto;
   margin-left: 10%;
   position: relative;
-  width: 60vmin;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -220,7 +221,6 @@ padding-top: 13px;
   margin: 0px auto;
   margin-right: 10%;
   position: relative;
-  width: 60vmin;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -249,9 +249,9 @@ padding-top: 13px;
 }
 
 .content_button{
-  background-color: #ddd;
+  background-color: rgb(250, 90, 90);
   border: none;
-  color: black;
+  color: white;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;

@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>About | Samuel James</title>
+    <title>About | Samuel Swedberg</title>
     <meta name="description" content="Swedberg Industries is a personal webstie for a future engineer and prop making/electrical hobbist."/>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../gen/gen.css">
     <link rel="shortcut icon" href="media/dv.ico">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
@@ -12,7 +13,16 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    </head>
+      <script src="../../jQuery-3.3.1.js"></script> 
+      <script> 
+      $(function(){
+        $("#navBar").load("../../nav"); 
+      });
+      $(function(){
+      $("#footer").load("../../footer"); 
+      });
+      </script> 
+      </head>
         <script language="javascript">
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
           location.href = '/mobile.html';}
@@ -22,39 +32,21 @@
 
 <div class="content">
 <!--- Nav Bar --->
-<div style="z-index: 10000" class="header">
-  <div class="container">
-    <div class="logo">
-      <a href="https://samueljames.com"><div class="swedberg">SAMUEL JAMES</div></a>
-    </div>
-    <div class="nav">
-      <ul>
-        <li class="navlist"><a class="navunderline" href="../projects">PROJECTS</a></li>
-        <li class="navlist"><a class="navunderline" href="../about">ABOUT</a></li>
-        <li class="navlist"><a class="navunderline" href="../contact">CONTACT</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+<div id="navBar"></div>
 
-<!--- Welcome -->
-<div class="container_c" style="height: 175px">
-  <div class="textcontainer_c" style="margin-top: 5%">
-    <div class="textheader_c">About</div>
-  </div>
-</div>
-
-<!--- Body -->
-  <div class="container_c" style="height: 800px">
+  <div class="container_c" style="height: 800px; margin-top: 5%">
     <div class="textcontainer_c">
+      <div class="textheader_c">About</div>
         <div class="textbody_c">
           <div>
           <p>I'm a freshman at North Dakota State University currently studying electrical engineering. I have a particular interest in robotics, but I am looking forward to expanding my knowledge and explore the engineering world. In my free time, you can find me often working out, playing video games, or working on my projects.</p>
           <p>A handful of my skills I have self-taught myself such as 3D printing and basic programming. I have a passion for learning new things and love the feeling of completing a project. To see a collection of my proudest projects, <a style="color: rgb(250, 90, 90)" href="../projects">click here</a>.</p>
+          <p>If you want to see what I'm doing in my life right now, <a style="color: rgb(250, 90, 90)" href="../now">click here</a>.</p>
         </div>
             <div class="textheader_c" style="width: 300px; margin-top: 5%;">My Mission</div>
             <div class="textbody_c">
-              <p>My mission</p>
+              <p>My personal mission is to live as a good example of how Christ would live and to inspire others to do the best they can in every aspect of his or her life. I will use my abilities and God given talents to make an impact on the world and in people’s life, no matter how big or small the impact is.</p>
+              <p>My student mission is to be a diligent learner and active listener. I will strive to always work hard, be respectful to those in authority and responsible with my actions.</p>
             </div>
   </div>
 </div>
@@ -62,10 +54,7 @@
 </div>
 
 <!--- Footer --->
-<footer class="footer">
-  <a class="devtext" href="../about">© Samuel James 2021</a>
-  <a class="footertext">YouTube, Instagram, Etc</a>
-</footer>
+<div id="footer"></div>
 
 </body>
 </html>

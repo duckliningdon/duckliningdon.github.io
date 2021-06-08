@@ -21,23 +21,20 @@ html, body, *{
 }
 
 /* nav bar */
-/* nav bar */
 .container{
   width: 85%;
   margin: 0 auto;
   z-index: 100;
   overflow: hidden;
 }
+
 .header{
   overflow-x: hidden;
   z-index: 10000;
-  width: 105%;
+  width: 100%;
   height: 80px;
-  background-color: #000;
-  top: 0px;
-  position: fixed;
+  position: absolute;
   overflow-y: hidden;
-  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
 }
 
 .logo {
@@ -45,7 +42,7 @@ html, body, *{
   width: 400px;
   margin: 0 auto;
   position: absolute;
-  top: 30%;
+  top: 20%;
   height: 100%;
 }
 
@@ -73,7 +70,6 @@ padding-top: 13px;
 .nav {
   float: right;
   font-family: 'Raleway', sans-serif;
-  margin-right: 5%;
 }
 
 .navunderline{
@@ -338,9 +334,9 @@ padding-top: 13px;
 }
 
 .content_button{
-  background-color: #ddd;
+  background-color: rgb(250, 90, 90);
   border: none;
-  color: black;
+  color: white;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
