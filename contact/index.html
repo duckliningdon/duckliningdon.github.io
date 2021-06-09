@@ -36,8 +36,10 @@
                 emailjs.sendForm('service_ae0gtcz', 'contact_wmectx2', this)
                     .then(function() {
                         console.log('SUCCESS!');
+                        window.open("submitted")
                     }, function(error) {
                         console.log('FAILED...', error);
+                        window.open("error")
                     });
             });
         }
@@ -73,11 +75,11 @@
   </div>
   <div class="container_r">
     <div class="textcontainer_r">
-      <form id="contact-form" action="submitted">
-        <input type="text" id="name" name="name" placeholder="Name">
-        <input type="email" id="mail" name="email" placeholder="Email">
-        <input type="text" id="subject" name="subject" placeholder="Subject">
-        <textarea id="message" name="message" placeholder="Your message.." style="height: 200px; max-height: 400px;"></textarea>
+      <form id="contact-form">
+        <input type="text" id="name" name="name" placeholder="Name" required>
+        <input type="email" id="mail" name="email" placeholder="Email" required>
+        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+        <textarea id="message" name="message" placeholder="Your message.." style="height: 200px; max-height: 400px;" required></textarea>
         <input type="submit" value="Send" style="margin-top: 10%">
       </form>
     </div>
