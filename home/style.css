@@ -39,7 +39,7 @@ html, body, *{
 
 .logo {
   animation: logo-entry 4s ease-in;
-  width: 400px;
+  width: 275px;
   margin: 0 auto;
   position: absolute;
   top: 20%;

@@ -45,6 +45,7 @@ html, body, *{
   margin: 0px auto;
   float: left;
   position: absolute;
+  margin-top: -5px;
 }
 
 .swedberg {
