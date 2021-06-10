@@ -47,7 +47,7 @@
 <!--- Welcome Box --->
   <div class="welcome_container">
     <div class="welcome_content">
-      <div id="sstdemo" style="opacity: 0" onload="document.getElementById(sstdemo).style.opacity='1'">
+      <div id="sstdemo" style="opacity: 0;">
         <span class="welcome_textheader">Hello there!</span>
           <div class="welcome_textbody">
             <div>My name is Samuel Swedberg.</div>
@@ -69,12 +69,13 @@
   <script src="home/jarvisgreetings.js"></script>
   <script src="media/typeWriter.js"></script>
   <script>
-    function textFade(){
-      $("#sstdemo").animate({'opacity':'1'},1500);
+    function changeOpacity(){
+      var element = document.getElementById("sstdemo")
+      element.style.opacity = "1";
     }
 
     window.onload = typeWriter("#sstdemo","true",30);
-    window.onload = textFade;
+    window.onload = changeOpacity;
   </script>
   </div>
 
