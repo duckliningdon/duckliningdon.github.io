@@ -11,21 +11,69 @@ html, body, *{
   box-sizing: border-box;
 }
 
-/* nav bar */
-.container{
-  width: 85%;
-  margin: 25px auto;
-  z-index: 100;
-  overflow-x: hidden;
-  opacity: 0.9;
-  height: 50%;
+img {
+  max-width: 100% !important;
+}
+
+p {
+  margin: auto !important;
+}
+
+@media screen and (min-width: 601px) {
+  p {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 5vw !important;
+  }
+}
+
+h1 {
+  margin: auto !important;
+}
+
+@media screen and (min-width: 601px) {
+  h1 {
+    font-size: 3rem !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 10vw !important;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .container {
+    width: 85%;
+    margin: 25px auto;
+    z-index: 100;
+    overflow: hidden;
+    opacity: 0.9;
+    height: 65%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 85%;
+    margin: 15px auto;
+    z-index: 100;
+    overflow: hidden;
+    opacity: 0.9;
+    height: 65%;
+  }
 }
 
 .header{
   overflow-x: hidden;
   z-index: 10000;
   width: 100%;
-  height: 80px;
+  height: 100px;
   top: 0px;
   position: relative;
   overflow-y: hidden;
@@ -41,20 +89,43 @@ html, body, *{
   animation-duration:1s;
 }
 
-.logo {
-  margin: 0px auto;
-  float: left;
-  position: absolute;
-  margin-top: -5px;
+@media screen and (min-width: 601px) {
+  .logo {
+    margin: 7.5px auto;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    margin: 17px auto;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
 }
 
 .swedberg {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.75em;
   color: #fff;
   font-weight: bold;
   font-style: italic;
   position: relative;
+}
+
+@media screen and (min-width: 601px) {
+  .swedberg {
+    font-size: 1.75em !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .swedberg {
+    font-size: 1.5em !important;
+    margin-top: 0px !important;
+  }
 }
 
 a{
@@ -62,11 +133,18 @@ text-decoration: none;
 color: #fff;
 }
 
+@media screen and (max-width: 600px) {
+  a {
+    font-size: 1em !important;
+    margin-top: 10px !important;
+  }
+}
+
 li.navlist{
 list-style: none;
 float: left;
 margin-left: 15px;
-padding-top: 13px;
+/*! padding-top: 13px; */
 }
 
 ul.facts{
@@ -74,10 +152,22 @@ ul.facts{
   text-align: left;
 }
 
-.nav {
-  float: right;
-  font-family: 'Raleway', sans-serif;
-  margin-top: -22px;
+@media screen and (min-width: 601px) {
+  .nav {
+    float: right;
+    font-family: 'Raleway', sans-serif;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    font-family: 'Raleway', sans-serif;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
 }
 
 .navunderline{
@@ -89,38 +179,40 @@ ul.facts{
 }
 
 .container_l{
-  height: 500px;
+  height: auto;
   position: relative;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
   background-color: #fff;
+  margin-bottom: 5%;
 }
 
 .container_r {
-  height: 500px;
+  height: auto;
   position: relative;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
   background-color: #fff;
+  margin-bottom: 5%;
 }
 
 .container_c{
-  height: 500px;
+  height: auto;
   position: relative;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
   background-color: #fff;
+  margin-bottom: 5%;
 }
 
 .textcontainer_l{
   margin: 0px auto;
-  margin-left: 10%;
   position: relative;
   width: 60vmin;
   margin-top: auto;
@@ -129,7 +221,6 @@ ul.facts{
 
 .textcontainer_r{
   margin: 0px auto;
-  margin-right: 10%;
   position: relative;
   width: 60vmin;
   margin-top: auto;
@@ -150,7 +241,6 @@ ul.facts{
   font-family: 'Raleway', sans-serif;
   text-shadow: 0px 0px 1px #fff;
   border-bottom: 0.5px solid currentColor;
-  width: 200px;
   margin: auto;
 }
 
@@ -161,7 +251,6 @@ ul.facts{
   font-family: 'Raleway', sans-serif;
   text-shadow: 0px 0px 1px #fff;
   border-bottom: 0.5px solid currentColor;
-  width: 200px;
   margin: auto;
 }
 
@@ -172,7 +261,6 @@ ul.facts{
   font-family: 'Raleway', sans-serif;
   text-shadow: 0px 0px 1px #fff;
   border-bottom: 0.5px solid currentColor;
-  width: 200px;
   margin: auto;
 }
 
@@ -215,7 +303,6 @@ ul.facts{
 
 .imagecontainer_l{
   margin: 0px auto;
-  margin-left: 10%;
   position: relative;
   margin-top: auto;
   margin-bottom: auto;
@@ -223,7 +310,6 @@ ul.facts{
 
 .imagecontainer_r{
   margin: 0px auto;
-  margin-right: 10%;
   position: relative;
   margin-top: auto;
   margin-bottom: auto;
@@ -231,7 +317,6 @@ ul.facts{
 
 .imagecontainer_c{
   margin: 0px auto;
-  margin-right: 10%;
   position: relative;
   width: 60vmin;
   margin-top: auto;
@@ -277,15 +362,34 @@ ul.facts{
   flex-wrap: wrap;
   margin: 0 auto;
   box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+  margin-top: 15%;
 }
 
+@media screen and (max-width: 600px) {
+  .footer {
+    margin-top: 0px !important;
+  }
+}
 .devtext{
-  margin-left: 25%;
   position: relative;
   color: white;
   font-family: 'Raleway', sans-serif;
   text-shadow: 0px 0px 3px #fff;
   margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 601px) {
+  .devtext {
+    margin-left: 15vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .devtext {
+    margin-left: 0%;
+    margin-top: 5%;
+    padding-top: 2%;
+  }
 }
 
 .footertext{
@@ -295,6 +399,21 @@ ul.facts{
   text-shadow: 0px 0px 3px #fff;
   margin-left: auto;
   align-content: baseline;
-  margin-right: 25%;
   margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 601px) {
+  .footertext {
+    margin-right: 15vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footertext {
+    margin-right: 0%;
+    margin-left: 0%;
+    padding: 15%;
+    padding-top: 0%;
+    padding-bottom: 0;
+  }
 }
