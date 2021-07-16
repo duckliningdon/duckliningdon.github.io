@@ -11,6 +11,10 @@
   opacity: 1 !important;
 }
 
+.navunderline {
+  border-bottom: hidden !important;
+}
+
 .fullscreen-bg {
     position: absolute;
     z-index: -10000;
