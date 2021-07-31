@@ -17,6 +17,7 @@ img {
 
 p {
   margin: auto !important;
+  margin-bottom: 10px !important;
 }
 
 @media screen and (min-width: 601px) {
